@@ -15,4 +15,9 @@ class UserPayment extends Model
      * @var string
      */
     protected $table = 'user_payments';
+
+    public function user()
+    {
+        return $this->belongsTo('App\UserRequests');
+    }
 }

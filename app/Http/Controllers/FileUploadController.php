@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class FileUploadController extends Controller
             'files.*' => 'required|file',
             'fromLanguage' => 'required',
             'toLanguage' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'mobile' => 'required',
         ]);
 

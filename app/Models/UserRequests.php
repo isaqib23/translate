@@ -15,4 +15,9 @@ class UserRequests extends Model
      * @var string
      */
     protected $table = 'user_requests';
+
+    public function payment()
+    {
+        return $this->hasOne('App\Models\UserPayment', 'user_uuid', 'user_uuid');
+    }
 }

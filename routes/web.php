@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,29 +12,46 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\FrontendController;
-use App\Http\Controllers\FileUploadController;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UserRequestController;
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/', [FrontendController::class, 'index']);
-Route::get('/success/{id}', [FrontendController::class, 'success']);
-Route::get('/verify_status/{id}', [FrontendController::class, 'verify_status']);
-Route::post('/upload', [FileUploadController::class, 'upload']);
+Auth::routes();
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+//Route::get('/', 'HomeController@redirectAdmin')->name('index');
+//Route::get('/home', 'HomeController@index')->name('home');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::get('/requests', [UserRequestController::class, 'index'])->name('requests');
-    Route::post('/set_amount', [UserRequestController::class, 'setAmount'])->name('setAmount');
-    Route::get('/view_files/{id}', [UserRequestController::class, 'view_files'])->name('view_files');
+Route::get('/', 'FrontendController@index')->name('home');
+Route::get('/success/{id}', 'FrontendController@success')->name('success');
+Route::get('/verify_status/{id}', 'FrontendController@verify_status')->name('verify_status');
+Route::post('/upload', 'FileUploadController@upload')->name('upload');
+
+//Route::get('/', [FrontendController::class, 'index']);
+//Route::get('/success/{id}', [FrontendController::class, 'success']);
+//Route::get('/verify_status/{id}', [FrontendController::class, 'verify_status']);
+//Route::post('/upload', [FileUploadController::class, 'upload']);
+/**
+ * Admin routes
+ */
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', 'Backend\DashboardController@index')->name('admin.dashboard');
+    Route::resource('roles', 'Backend\RolesController', ['names' => 'admin.roles']);
+    Route::resource('permissions', 'Backend\PermissionController', ['names' => 'admin.permissions']);
+    Route::resource('users', 'Backend\UsersController', ['names' => 'admin.users']);
+    Route::resource('admins', 'Backend\AdminsController', ['names' => 'admin.admins']);
+
+    Route::get('/requests', 'Backend\OrderController@index')->name('admin.requests');
+    Route::post('/set_amount', 'Backend\OrderController@setAmount')->name('admin.setAmount');
+    Route::get('/view_files/{id}', 'Backend\OrderController@view_files')->name('admin.requests.view_files');
+
+    // Login Routes
+    Route::get('/login', 'Backend\Auth\LoginController@showLoginForm')->name('admin.login');
+    Route::post('/login/submit', 'Backend\Auth\LoginController@login')->name('admin.login.submit');
+
+    // Logout Routes
+    Route::post('/logout/submit', 'Backend\Auth\LoginController@logout')->name('admin.logout.submit');
+
+    // Forget Password Routes
+    Route::get('/password/reset', 'Backend\Auth\ForgetPasswordController@showLinkRequestForm')->name('admin.password.request');
+    Route::post('/password/reset/submit', 'Backend\Auth\ForgetPasswordController@reset')->name('admin.password.update');
 });
-
-require __DIR__.'/auth.php';
-
