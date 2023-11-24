@@ -24,7 +24,7 @@
                     </li>
                     @endif
 
-                    @if ($usr->can('orders'))
+                    @if ($usr->can('order.view') ||  $usr->can('role.edit') ||  $usr->can('order.delete'))
                         <li class="active">
                             <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>orders</span></a>
                             <ul class="collapse">

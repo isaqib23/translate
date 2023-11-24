@@ -49,7 +49,8 @@ Orders Files - Admin Panel
                             <thead class="bg-light text-capitalize">
                                 <tr>
                                     <th width="5%">Sl</th>
-                                    <th width="60%">File Name</th>
+                                    <th width="20%">File Name</th>
+                                    <th width="40%">Type</th>
                                     <th width="10%">Sent At</th>
                                 </tr>
                             </thead>
@@ -57,7 +58,20 @@ Orders Files - Admin Panel
                                @foreach($files as $file)
                                <tr>
                                     <td>{{ $loop->index+1 }}</td>
-                                    <td>{{ $file->file_name }}</td>
+                                    <td><a href="{{ asset('storage/' . $file->file_path) }}" target="_blank">{{ $file->file_name }}</a></td>
+                                    <td>
+                                    <?php
+                                     if($user->category_type == 1){
+                                         echo "From ".ucwords(getCountryName($user->from))." To ".ucwords(getCountryName($user->to));
+                                      }elseif($user->category_type == 2){
+                                         $selectedValues = array_intersect_key(getDraftCategories(), array_flip(json_decode($user->category)));
+                                                                               echo implode(", ", $selectedValues);
+                                      }else{
+                                      $selectedValues = array_intersect_key(getNotaryCategories(), array_flip(json_decode($user->category)));
+                                      echo implode(", ", $selectedValues);
+                                      }
+                                     ?>
+                                    </td>
                                     <td>{{ $file->created_at }}</td>
                                 </tr>
                                @endforeach

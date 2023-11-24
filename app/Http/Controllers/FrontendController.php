@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\UserPayment;
+use App\Models\UserRequests;
+use Illuminate\Support\Facades\Http;
 
 class FrontendController extends Controller
 {

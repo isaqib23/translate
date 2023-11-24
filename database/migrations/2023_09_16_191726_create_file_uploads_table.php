@@ -16,10 +16,12 @@ return new class extends Migration
         Schema::create('user_requests', function (Blueprint $table) {
             $table->id();
             $table->uuid('user_uuid')->unique();
-            $table->string('from');
-            $table->string('to');
-            $table->string('email');
-            $table->string('mobile');
+            $table->string('category_type');
+            $table->string('category')->nullable();
+            $table->string('from')->nullable();
+            $table->string('to')->nullable();
+            $table->string('email')->nullable();
+            $table->string('mobile')->nullable();
             $table->timestamps();
         });
     }

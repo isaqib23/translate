@@ -49,10 +49,9 @@ Orders Page - Admin Panel
                             <thead class="bg-light text-capitalize">
                                 <tr>
                                     <th width="5%">Sl</th>
-                                    <th width="10%">From</th>
-                                    <th width="10%">To</th>
-                                    <th width="10%">Email</th>
-                                    <th width="10%">Mobile</th>
+                                    <th width="10%">Order Type</th>
+                                    <th width="10%">Name</th>
+                                    <th width="10%">Email/Mobile</th>
                                     <th width="10%">Status</th>
                                     <th width="15%">Action</th>
                                 </tr>
@@ -61,8 +60,17 @@ Orders Page - Admin Panel
                                @foreach ($users as $user)
                                <tr>
                                     <td>{{ $loop->index+1 }}</td>
-                                    <td>{{ ucwords(getCountryName($user->from)) }}</td>
-                                    <td>{{ ucwords(getCountryName($user->to)) }}</td>
+                                    <td>
+                                    <?php
+                                     if($user->category_type == 1){
+                                        echo "Translating";
+                                     }elseif($user->category_type == 1){
+                                        echo "Drafting";
+                                     }else{
+                                        echo "Notary";
+                                     }
+                                     ?>
+                                    </td>
                                     <td>{{ $user->email }}</td>
                                     <td>{{ $user->mobile }}</td>
                                     <td>
@@ -71,8 +79,10 @@ Orders Page - Admin Panel
                                         </span>
                                     </td>
                                     <td>
+                                    @if (Auth::guard('admin')->user()->can('order.edit'))
                                         <a class="btn btn-success text-white" href="{{ route('admin.requests.view_files', $user->user_uuid) }}">View Files</a>
-                                        @if (Auth::guard('admin')->user()->can('admin.edit'))
+                                    @endif
+                                        @if (Auth::guard('admin')->user()->can('order.delete'))
                                             <a class="btn btn-danger text-white" href="{{ route('admin.roles.destroy', $user->id) }}"
                                             onclick="event.preventDefault(); document.getElementById('delete-form-{{ $user->id }}').submit();">
                                                 Delete

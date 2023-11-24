@@ -12,18 +12,12 @@ class FileUploadController extends Controller
 {
     public function upload(Request $request)
     {
-        $request->validate([
-            'files.*' => 'required|file',
-            'fromLanguage' => 'required',
-            'toLanguage' => 'required',
-            'email' => 'required|email',
-            'mobile' => 'required',
-        ]);
-
         $userRequest = new UserRequests;
         $userRequest->user_uuid = (string) Str::uuid();
-        $userRequest->from = $request->input('fromLanguage');
-        $userRequest->to = $request->input('toLanguage');
+        $userRequest->from = ($request->input('category_type') == 1) ? $request->input('from') : null;
+        $userRequest->to = ($request->input('category_type') == 1) ? $request->input('to') : null;
+        $userRequest->category_type = $request->input('category_type');
+        $userRequest->category = ($request->input('category_type') == 2) ? json_encode($request->input('draft')) : json_encode($request->input('notary'));
         $userRequest->email = $request->input('email');
         $userRequest->mobile = $request->input('mobile');
         $userRequest->save();
@@ -46,14 +40,7 @@ class FileUploadController extends Controller
             $userPayment->user_uuid = $userRequest->user_uuid;
             $userPayment->status = "pending";
             $userPayment->save();
-
-            return response()->json([
-                'success' => true,
-                'data' => $userRequest->user_uuid,
-                'message' => 'Files have been uploaded. An agent should contact you shortly!'
-            ]);
-        } else {
-            return response()->json(['error' => 'No files uploaded'], 400);
         }
+        return redirect('/success/'.$userRequest->user_uuid);
     }
 }

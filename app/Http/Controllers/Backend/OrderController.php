@@ -22,7 +22,7 @@ class OrderController extends Controller
 
     public function index()
     {
-        if (is_null($this->user) || !$this->user->can('orders')) {
+        if (is_null($this->user) || !$this->user->can('order.view')) {
             abort(403, 'Sorry !! You are Unauthorized to view any role !');
         }
         $users = UserRequests::orderBy('user_requests.id', 'desc')->paginate(10);
@@ -31,15 +31,16 @@ class OrderController extends Controller
 
     public function view_files(Request $request)
     {
-        if (is_null($this->user) || !$this->user->can('orders')) {
+        if (is_null($this->user) || !$this->user->can('order.edit')) {
             abort(403, 'Sorry !! You are Unauthorized to view any role !');
         }
         $files = FileUpload::where("user_uuid",$request->segment(3))->paginate(10);
-        return view('backend.pages.requests.files', ['files' => $files]);
+        $user = UserRequests::where('user_uuid', $request->segment(3))->first();
+        return view('backend.pages.requests.files', ['files' => $files, 'user' => $user]);
     }
 
     public function setAmount(Request $request){
-        if (is_null($this->user) || !$this->user->can('orders')) {
+        if (is_null($this->user) || !$this->user->can('order.edit')) {
             abort(403, 'Sorry !! You are Unauthorized to view any role !');
         }
         $request->validate([

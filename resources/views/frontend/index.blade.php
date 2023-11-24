@@ -1,7 +1,7 @@
 @extends('frontend.layout.app')
 @section('content')
 
-<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+<link href="https://unpkg.com/filepond/dist/filepond.min.css" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('frontend/bootstrap-image-checkbox.css') }}" type="text/css" />
 <style>
  .single-services {
@@ -74,6 +74,26 @@
 .dropzone .dz-preview .dz-progress .dz-upload {
     background: green !important
 }
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 12px;
+    height: 12px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 </style>
 <!-- Three columns of text below the carousel -->
     <div class="services-area" style="margin-top:-100px">
@@ -125,11 +145,50 @@
 <div style="margin: 0 auto; text-align: center">
     <h2>Translate your Docs</h2>
 </div>
-<form class="row g-3" action="http://test.com" method="post" id="mainForm" data-ajax-method="POST" data-ajax="true">
+<form class="row g-3" action="<?=url('/upload')?>" method="post" id="mainForm" enctype="multipart/form-data">
+  <div class="row" style="margin-bottom: 35px">
+    <div class="col-md-4 text-center">
+        <input type="radio" class="btn-check" name="category_type" id="success-outlined1" value="1" autocomplete="off" checked>
+        <label class="btn btn-outline-success" for="success-outlined1">Translating</label>
+    </div>
+    <div class="col-md-4 text-center">
+        <input type="radio" class="btn-check" name="category_type" id="success-outlined2" value="2" autocomplete="off">
+        <label class="btn btn-outline-success" for="success-outlined2">Drafting</label>
+    </div>
+    <div class="col-md-4 text-center">
+        <input type="radio" class="btn-check" name="category_type" id="success-outlined3" value="3" autocomplete="off">
+        <label class="btn btn-outline-success" for="success-outlined3">Notary</label>
+    </div>
+  </div>
+
+  <div class="row d-none" id="drafting" style="margin-bottom: 30px;">
+  <label style="margin-bottom: 15px; font-weight: bold">Select Category</label>
+    @foreach(getDraftCategories() as $key => $category)
+        <div class="col-md-3">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="draft[]" type="checkbox" id="inlineCheckbox{{$key}}" value="{{$key}}">
+              <label class="form-check-label" for="inlineCheckbox{{$key}}">{{$category}}</label>
+            </div>
+        </div>
+    @endforeach
+  </div>
+
+  <div class="row d-none" id="notary" style="margin-bottom: 30px;">
+    <label style="margin-bottom: 15px; font-weight: bold">Select Category</label>
+      @foreach(getNotaryCategories() as $key => $category)
+          <div class="col-md-3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="notary[]" type="checkbox" id="inlineCheckbox{{$key}}" value="{{$key}}">
+                <label class="form-check-label" for="inlineCheckbox{{$key}}">{{$category}}</label>
+              </div>
+          </div>
+      @endforeach
+    </div>
+
   <div class="row">
   <div class="col-md-6">
       <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
         <label for="floatingInput">Name</label>
       </div>
     </div>
@@ -142,22 +201,18 @@
   <!--begin::Input group-->
       <div class="form-group">
           <!--begin::Dropzone-->
-          <div class="dropzone dropzones dropzone-previews" id="file-upload">
-              <!--begin::Message-->
-              <div class="dz-message needsclick">
-                  <!--begin::Info-->
-                  <div class="ms-4">
-                      <h3 class="fs-5 fw-bold text-gray-900 mb-1">Drop files here or click to upload.</h3>
-                  </div>
-                  <!--end::Info-->
-              </div>
-          </div>
+          <input type="file"
+                     class="filepond"
+                     name="files[]"
+                     multiple>
+          @csrf
           <!--end::Dropzone-->
       </div>
       <!--end::Input group-->
   </div>
 
   <!-- From Radio Start -->
+  <div id="countries">
   <div style="margin-top: 20px; margin-bottom: 20px; text-align: center">
       <h4>From</h3>
   </div>
@@ -197,21 +252,28 @@
         </div>
     </div>
 </div>
+</div>
     <!-- To Radio End -->
 
 
   <div class="col-12">
   <div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    <button class="btn btn-primary btn-lg" id="submitForm" type="submit">Submit</button>
   </div>
   </div>
 </form>
 </div>
 <!-- form end -->
-<script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
 <script type="text/javascript">
-Dropzone.autoDiscover = false;
-$(function() {
+$(document).ready(function() {
+    var pond = FilePond.create($('input[type="file"]')[0], {
+        storeAsFile: true,
+    });
+
+    });
+//Dropzone.autoDiscover = false;
+/*$(function() {
     var myDropzone = new Dropzone("#file-upload", {
     autoProcessQueue: false,
     paramName: "files",
@@ -230,6 +292,9 @@ $(function() {
         if (myDropzone.getQueuedFiles().length > 0) {
             myDropzone.processQueue();
         } else {
+            //var btn = $("#submitForm");
+            //btn.prop('disabled', true);
+            //btn.text('Processing...');
             this.submit();
         }
     });
@@ -237,20 +302,39 @@ $(function() {
     myDropzone.on("sendingmultiple", function(data, xhr, formData) {
         formData.append("mobile", $("#floatingPassword").val());
         formData.append("email", $("#floatingInput").val());
+        formData.append("category_type", selectedValue);
+        formData.append("draft", $("input[name='draft[]']:checked").val());
+        formData.append("notary", $("input[name='notary[]']:checked").val());
         formData.append("fromLanguage", $("input[name='from']:checked").val());
         formData.append("toLanguage", $("input[name='to']:checked").val());
     });
 
     myDropzone.on("success", function(file, response) {
-        console.log(response);
         if (response.success) {
-            //window.location.href = "/success/"+response.data;
+            window.location.href = "/success/"+response.data;
         } else {
-            //alert(response.message);
-            //location.reload();
+            alert(response.message);
+            location.reload();
         }
     });
 });
+*/
+$('input[type="radio"][name="category_type"]').change(function() {
+        var selectedValue = $(this).val();
+        if(selectedValue == 2){
+            $("#drafting").removeClass("d-none");
+            $("#notary").addClass("d-none");
+            $("#countries").hide();
+        }else if(selectedValue == 3){
+            $("#drafting").addClass("d-none");
+            $("#countries").hide();
+            $("#notary").removeClass("d-none");
+        }else{
+            $("#countries").show();
+            $("#drafting").addClass("d-none");
+            $("#notary").addClass("d-none");
+        }
+    });
 
 </script>
 @endsection
