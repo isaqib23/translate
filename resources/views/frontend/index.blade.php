@@ -188,13 +188,13 @@
   <div class="row">
   <div class="col-md-6">
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="text" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
         <label for="floatingInput">Name</label>
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-floating">
-        <input type="tel" class="form-control" id="floatingPassword" placeholder="mobile">
+        <input type="tel" name="mobile" class="form-control" id="floatingPassword" placeholder="mobile">
         <label for="floatingPassword">Email / WhatsApp Number</label>
       </div>
     </div>
