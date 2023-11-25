@@ -203,7 +203,7 @@
           <!--begin::Dropzone-->
           <input type="file"
                      class="filepond"
-                     name="files[]"
+                     name="file"
                      multiple>
           @csrf
           <!--end::Dropzone-->
@@ -255,7 +255,12 @@
 </div>
     <!-- To Radio End -->
 
-
+  <div class="row d-none" id="id_check" style="margin-bottom: 30px;">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" name="id_check" type="checkbox" id="id_check" value="1">
+      <label class="form-check-label" for="id_check">Include IDs or Passport</label>
+    </div>
+  </div>
   <div class="col-12">
   <div class="d-grid gap-2 col-6 mx-auto">
     <button class="btn btn-primary btn-lg" id="submitForm" type="submit">Submit</button>
@@ -268,10 +273,45 @@
 <script type="text/javascript">
 $(document).ready(function() {
     var pond = FilePond.create($('input[type="file"]')[0], {
-        storeAsFile: true,
+        server: "<?=url('/upload_files')?>",
     });
 
+    $('#mainForm').on('submit', function(e) {
+        e.preventDefault();
+        var btn = $("#submitForm");
+        btn.prop('disabled', true);
+        btn.text('Processing...');
+
+        // Get files from FilePond
+        var files = pond.getFiles();
+        // Create a new FormData object
+        var formData = new FormData(this);
+
+        // Append each file to the FormData object
+        files.forEach(function(fileItem, index) {
+            formData.append('files[]', fileItem.serverId);
+        });
+
+        // Now append other form fields and send via AJAX
+        $.ajax({
+            url: '<?=url('/upload')?>',
+            type: 'post',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                window.location.href = "/success/"+response.data;
+            },
+            error: function(xhr, status, error) {
+                btn.prop('disabled', false);
+                btn.text('Submit');
+                if (xhr.responseJSON) {
+                    alert(xhr.responseJSON.message);
+                }
+            }
+        });
     });
+});
 //Dropzone.autoDiscover = false;
 /*$(function() {
     var myDropzone = new Dropzone("#file-upload", {
@@ -323,16 +363,19 @@ $('input[type="radio"][name="category_type"]').change(function() {
         var selectedValue = $(this).val();
         if(selectedValue == 2){
             $("#drafting").removeClass("d-none");
+            $("#id_check").removeClass("d-none");
             $("#notary").addClass("d-none");
             $("#countries").hide();
         }else if(selectedValue == 3){
             $("#drafting").addClass("d-none");
             $("#countries").hide();
             $("#notary").removeClass("d-none");
+            $("#id_check").removeClass("d-none");
         }else{
             $("#countries").show();
             $("#drafting").addClass("d-none");
             $("#notary").addClass("d-none");
+            $("#id_check").addClass("d-none");
         }
     });
 

@@ -12,6 +12,11 @@ class FileUploadController extends Controller
 {
     public function upload(Request $request)
     {
+        $validate = $this->validateData($request);
+        if(!isset($validate["success"])){
+            return response()->json($validate, 400);
+        }
+
         $userRequest = new UserRequests;
         $userRequest->user_uuid = (string) Str::uuid();
         $userRequest->from = ($request->input('category_type') == 1) ? $request->input('from') : null;
@@ -23,16 +28,15 @@ class FileUploadController extends Controller
         $userRequest->save();
 
 
-        if ($request->hasFile('files')) {
-            foreach ($request->file('files') as $file) {
-                $fileName = time() . '_' . $file->getClientOriginalName();
-                $filePath = $file->storeAs('uploads', $fileName, 'public');
+        if ($request->has('files')) {
+            foreach ($request->input('files') as $file) {
+                $fileData = json_decode($file);
 
                 $userFile = new FileUpload;
                 $userFile->user_uuid = $userRequest->user_uuid;
-                $userFile->file_name = $fileName;
-                $userFile->file_path = $filePath;
-                $userFile->file_type = $file->getClientMimeType();
+                $userFile->file_name = $fileData->file_name;
+                $userFile->file_path = $fileData->file_path;
+                $userFile->file_type = $fileData->file_type;
                 $userFile->save();
             }
 
@@ -41,6 +45,57 @@ class FileUploadController extends Controller
             $userPayment->status = "pending";
             $userPayment->save();
         }
-        return redirect('/success/'.$userRequest->user_uuid);
+        return response()->json([
+            'success' => true,
+            'data' => $userRequest->user_uuid,
+            'message' => 'Files have been uploaded. An agent should contact you shortly!'
+        ]);
+    }
+
+    public function upload_files(Request $request){
+        $file = $request->file('file');
+        $fileName = time() . '_' . $file->getClientOriginalName();
+        $filePath = $file->storeAs('uploads', $fileName, 'public');
+        return response()->json([
+            "file_name" => $fileName,
+            "file_path" => $filePath,
+            "file_type" => $file->getClientMimeType(),
+        ], 200);
+    }
+
+    public function validateData(Request $request) {
+        if (!$request->has('category_type') || $request->input('category_type') == "") {
+            return ["message" => "Category Type is required"];
+        } elseif ($request->input('category_type') == 1) {
+            if (!$request->has('from') || $request->input('from') == "") {
+                return ["message" => "From Country is required"];
+            } elseif (!$request->has('to') || $request->input('to') == "") {
+                return ["message" => "To Country is required"];
+            }
+        } elseif ($request->input('category_type') == 2) {
+            if (!$request->has('draft')) {
+                return ["message" => "Drafting Options is required"];
+            } elseif (!$request->has('id_check') || $request->input('id_check') == "") {
+                return ["message" => "ID or Passport check is required"];
+            }
+        } elseif ($request->input('category_type') == 3) {
+            if (!$request->has('notary')) {
+                return ["message" => "Notary Options is required"];
+            } elseif (!$request->has('id_check') || $request->input('id_check') == "") {
+                return ["message" => "ID or Passport check is required"];
+            }
+        }
+
+        if (!$request->has('email') || $request->input('email') == "") {
+            return ["message" => "Name is required"];
+        }
+        if (!$request->has('mobile') || $request->input('mobile') == "") {
+            return ["message" => "Mobile is required"];
+        }
+        if (!$request->has('files')) {
+            return ["message" => "Upload files is required"];
+        }
+
+        return ["success" => true];
     }
 }
