@@ -90,7 +90,7 @@ Orders Page - Admin Panel
                                                 Delete
                                             </a>
 
-                                            <form id="delete-form-{{ $user->id }}" action="{{ route('admin.roles.destroy', $user->id) }}" method="POST" style="display: none;">
+                                            <form id="delete-form-{{ $user->id }}" action="{{ route('admin.requests.destroy', $user->id) }}" method="POST" style="display: none;">
                                                 @method('DELETE')
                                                 @csrf
                                             </form>
