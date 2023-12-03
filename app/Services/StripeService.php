@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 class StripeService
 {
     public function sessionCreate($amount,$user_uuid){
-    dd(env("STRIPE_KEY"));
+    dd(config('app.stripe_key'));
         Stripe::setApiKey(env("STRIPE_KEY"));
         return StripeSession::create([
                'payment_method_types' => ['card'],
