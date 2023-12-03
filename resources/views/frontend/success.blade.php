@@ -77,7 +77,7 @@ window.onload = function () {
 
     $("#clickToPay").on('click', function(){
         $.ajax({
-            url: '/verify_payment/<?=request()->segment(2)?>/tabby',
+            url: '/verify_payment/<?=request()->segment(2)?>/stripe',
             type: 'GET',
             dataType: 'json',
             success: function(response) {

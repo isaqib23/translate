@@ -7,9 +7,8 @@ use Illuminate\Support\Facades\Http;
 
 class StripeService
 {
-    public $base_url = "https://api.tabby.ai/api/v2/";
-    public $pk_test = env('STRIPE_PUBLIC_KEY');
-    public $sk_test = env('STRIPE_SECRET_KEY');
+    dd(env("STRIPE_KEY"));
+    Stripe::setApiKey(env("STRIPE_KEY"));
 
     public function sessionCreate($amount,$user_uuid){
         return StripeSession::create([

@@ -56,7 +56,7 @@ class FrontendController extends Controller
                          ->where('user_uuid', $request->segment(2))
                          ->update(['status' => 'accepted']);
         return response()->json([
-            'payment_url' => $this->handleCheckout($firstRecord->amount, $request->segment(2), "stripe"),
+            'payment_url' => $this->handleCheckout($firstRecord->amount, $request->segment(2), $request->segment(3)),
         ], 200);
     }
 
