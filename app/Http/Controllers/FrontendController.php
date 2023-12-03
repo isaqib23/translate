@@ -56,11 +56,11 @@ class FrontendController extends Controller
                          ->where('user_uuid', $request->segment(2))
                          ->update(['status' => 'accepted']);
         return response()->json([
-            'payment_url' => $this->handleCheckout($firstRecord->amount, $request->segment(2), $request->segment(3)),
+            'payment_url' => $this->handleCheckout($firstRecord->amount, $request->segment(2), "stripe"),
         ], 200);
     }
 
-    public function handleCheckout($amount, $user_uuid, $payment_method = "stripe")
+    public function handleCheckout($amount, $user_uuid, $payment_method)
     {
         if($payment_method == "stripe"){
             $stripe = new StripeService();
