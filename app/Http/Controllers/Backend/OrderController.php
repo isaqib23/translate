@@ -51,4 +51,17 @@ class OrderController extends Controller
         UserPayment::where("user_uuid",$request->input("uuid"))->update(["status" => "updated", "amount" => $request->input("amount")]);
         return response()->json(["message" => "Amount is updated"], 200);
     }
+
+    public function destroy($id)
+    {
+        $user = UserRequests::find($id);
+        if (!is_null($user)) {
+            UserPayment::where("user_uuid",$user->user_uuid)->delete();
+            FileUpload::where("user_uuid",$user->user_uuid)->delete();
+            UserRequests::where("user_uuid",$user->user_uuid)->delete();
+        }
+
+        session()->flash('success', 'Order has been deleted !!');
+        return back();
+    }
 }

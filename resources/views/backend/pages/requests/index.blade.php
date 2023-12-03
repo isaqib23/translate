@@ -85,7 +85,7 @@ Orders Page - Admin Panel
                                         <a class="btn btn-success text-white" href="{{ route('admin.requests.view_files', $user->user_uuid) }}">View Files</a>
                                     @endif
                                         @if (Auth::guard('admin')->user()->can('order.delete'))
-                                            <a class="btn btn-danger text-white" href="{{ route('admin.roles.destroy', $user->id) }}"
+                                            <a class="btn btn-danger text-white" href="{{ route('admin.requests.destroy', $user->id) }}"
                                             onclick="event.preventDefault(); document.getElementById('delete-form-{{ $user->id }}').submit();">
                                                 Delete
                                             </a>
