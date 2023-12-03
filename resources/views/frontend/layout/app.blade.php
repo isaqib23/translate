@@ -33,31 +33,45 @@
           font-size: 3.5rem;
         }
       }
-      .whatsapp-float {
+
+
+      .whatsapp-fab {
           position: fixed;
-          bottom: 20px;
-          right: 20px;
           width: 60px;
           height: 60px;
-          background-color: #25d366;
+          bottom: 40px;
+          right: 40px;
+          background-color: #25D366;
+          color: white;
           border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-          z-index: 1000;
+          text-align: center;
+          font-size: 30px;
+          box-shadow: 2px 2px 3px #999;
+          z-index: 100;
+      }
+      .whatsapp-fab:hover{
+      color: white;
       }
 
-      .whatsapp-float i {
-          color: #ffffff;
+
+      /* Blinking effect */
+      @keyframes blinker {
+          50% {
+              opacity: 0;
+          }
       }
+
+      .whatsapp-fab {
+          animation: blinker 1s linear infinite;
+      }
+
     </style>
 
 
     <!-- Custom styles for this template -->
   </head>
   <body>
-<a href="https://wa.me/+971567463549?text=Hello%20I%20have%20an%20inquiry" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/+971567463549?text=Hello%20I%20have%20an%20inquiry" class="whatsapp-fab" target="_blank">
     <i class="fab fa-whatsapp fa-2x"></i>
 </a>
 <!-- Header -->

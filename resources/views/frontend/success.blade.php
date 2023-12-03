@@ -5,7 +5,7 @@
 <div style="margin: 0 auto; text-align: center">
     <div class="alert alert-success" role="alert">
       <h4 class="alert-heading">Request Submitted!</h4>
-      <p>we are processing your request and we will be back with time and cost</p>
+      <p>we are processing your request and we will be back with time and cost within 2 minutes</p>
     </div>
 </div>
 </div>
@@ -16,10 +16,12 @@
             60
         </div>
         <div id="payment" class="d-none">
-            <div class="alert alert-info mt-3" role="alert">
+            <div class="alert alert-success mt-3" role="alert">
                 You have to pay AED: <span class="amount"></span>
             </div>
             <button id="clickToPay" class="btn btn-success btn-block btn-lg">Continue to Payment</button>
+            <br>
+            <a style="margin-top:10px" class="text-sm btn btn-sm btn-outline-success" href="https://wa.me/+971567463549?text=Hello%20I%20have%20an%20inquiry" target="_blank">for any clarification <i class="fab fa-whatsapp"></i></a>
         </div>
     </div>
     <div class="col-md-8" style="text-align: center">
@@ -61,8 +63,12 @@ window.onload = function () {
                 $("#payment").removeClass("d-none");
             },
             error: function(xhr, status, error) {
+            if(xhr.status === 403){
+                window.location.href = "/"
+            }else{
                 console.error('An error occurred:', error);
                 setTimeout(fetchData, 10000);
+              }
             }
         });
     }
@@ -71,7 +77,7 @@ window.onload = function () {
 
     $("#clickToPay").on('click', function(){
         $.ajax({
-            url: '/verify_payment/<?=request()->segment(2)?>',
+            url: '/verify_payment/<?=request()->segment(2)?>/tabby',
             type: 'GET',
             dataType: 'json',
             success: function(response) {

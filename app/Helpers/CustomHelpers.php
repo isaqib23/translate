@@ -62,3 +62,29 @@ if (!function_exists('getNotaryCategories')) {
         );
     }
 }
+
+if (!function_exists('identifyAndFormat')) {
+    function identifyAndFormat($input) {
+        // Check if the input is a valid email
+        if (filter_var($input, FILTER_VALIDATE_EMAIL)) {
+            return ["type" => "email", "input" => $input];
+        } else {
+            // Define default country code
+            $defaultCountryCode = '971';
+
+            // Remove non-numeric characters (like dashes, spaces, etc.)
+            $number = preg_replace('/\D/', '', $input);
+
+            // Check for leading country code (00 or +)
+            if (substr($number, 0, 2) === '00') {
+                $number = substr($number, 2); // Remove leading zeroes
+            } elseif (substr($number, 0, 1) === '0') {
+                $number = $defaultCountryCode . substr($number, 1); // Replace leading zero with default country code
+            } elseif (substr($number, 0, strlen($defaultCountryCode)) !== $defaultCountryCode) {
+                $number = $defaultCountryCode . $number; // Prepend default country code if not present
+            }
+
+            return ["type" => "mobile", "input" => $input];
+        }
+    }
+}

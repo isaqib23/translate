@@ -184,7 +184,20 @@
           </div>
       @endforeach
     </div>
-
+    <div class="row" id="translate_type" style="margin-bottom: 30px;">
+        <div class="col-md-3">
+           <div class="form-check form-check-inline">
+             <input class="form-check-input" name="translate_type" checked="true" type="radio" id="normal" value="normal">
+             <label class="form-check-label" for="normal">Normal</label>
+           </div>
+         </div>
+         <div class="col-md-3">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="translate_type" type="radio" id="legal" value="legal">
+              <label class="form-check-label" for="legal">Legal</label>
+            </div>
+         </div>
+    </div>
   <div class="row">
   <div class="col-md-6">
       <div class="form-floating mb-3">
@@ -198,6 +211,7 @@
         <label for="floatingPassword">Email / WhatsApp Number</label>
       </div>
     </div>
+
   <!--begin::Input group-->
       <div class="form-group">
           <!--begin::Dropzone-->
@@ -258,7 +272,7 @@
   <div class="row d-none" id="id_check" style="margin-bottom: 30px;">
     <div class="form-check form-check-inline">
       <input class="form-check-input" name="id_check" type="checkbox" id="id_check" value="1">
-      <label class="form-check-label" for="id_check">Include IDs or Passport</label>
+      <label class="form-check-label" for="id_check">Include IDs or Passport <span class="text-danger text-bold">*</span></label>
     </div>
   </div>
   <div class="col-12">
@@ -312,53 +326,7 @@ $(document).ready(function() {
         });
     });
 });
-//Dropzone.autoDiscover = false;
-/*$(function() {
-    var myDropzone = new Dropzone("#file-upload", {
-    autoProcessQueue: false,
-    paramName: "files",
-    maxFiles: 10,
-    maxFilesize: 10240, // in MB
-    uploadMultiple: true,
-    addRemoveLinks: true,
-    parallelUploads: 10000,
-    url: "/upload",
-    headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
-});
 
-    $("#mainForm").on("submit", function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        if (myDropzone.getQueuedFiles().length > 0) {
-            myDropzone.processQueue();
-        } else {
-            //var btn = $("#submitForm");
-            //btn.prop('disabled', true);
-            //btn.text('Processing...');
-            this.submit();
-        }
-    });
-
-    myDropzone.on("sendingmultiple", function(data, xhr, formData) {
-        formData.append("mobile", $("#floatingPassword").val());
-        formData.append("email", $("#floatingInput").val());
-        formData.append("category_type", selectedValue);
-        formData.append("draft", $("input[name='draft[]']:checked").val());
-        formData.append("notary", $("input[name='notary[]']:checked").val());
-        formData.append("fromLanguage", $("input[name='from']:checked").val());
-        formData.append("toLanguage", $("input[name='to']:checked").val());
-    });
-
-    myDropzone.on("success", function(file, response) {
-        if (response.success) {
-            window.location.href = "/success/"+response.data;
-        } else {
-            alert(response.message);
-            location.reload();
-        }
-    });
-});
-*/
 $('input[type="radio"][name="category_type"]').change(function() {
         var selectedValue = $(this).val();
         if(selectedValue == 2){
@@ -366,13 +334,16 @@ $('input[type="radio"][name="category_type"]').change(function() {
             $("#id_check").removeClass("d-none");
             $("#notary").addClass("d-none");
             $("#countries").hide();
+            $("#translate_type").hide();
         }else if(selectedValue == 3){
             $("#drafting").addClass("d-none");
             $("#countries").hide();
+            $("#translate_type").hide();
             $("#notary").removeClass("d-none");
             $("#id_check").removeClass("d-none");
         }else{
             $("#countries").show();
+            $("#translate_type").show();
             $("#drafting").addClass("d-none");
             $("#notary").addClass("d-none");
             $("#id_check").addClass("d-none");

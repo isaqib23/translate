@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\UserPayment;
 use App\Models\UserRequests;
 use Illuminate\Support\Facades\Http;
+use App\Services\StripeService;
+use App\Services\TabbyService;
 use Stripe\Stripe;
 use Stripe\Checkout\Session as StripeSession;
 
@@ -54,41 +56,45 @@ class FrontendController extends Controller
                          ->where('user_uuid', $request->segment(2))
                          ->update(['status' => 'accepted']);
         return response()->json([
-            'payment_url' => $this->handleCheckout($firstRecord->amount, $request->segment(2)),
+            'payment_url' => $this->handleCheckout($firstRecord->amount, $request->segment(2), $request->segment(3)),
         ], 200);
     }
 
-    public function handleCheckout($amount, $user_uuid)
+    public function handleCheckout($amount, $user_uuid, $payment_method = "stripe")
     {
-        // Set your secret key
-        Stripe::setApiKey("sk_test_51Nm90nE1ydFAXdZx3MIiBQnxQW3NmFjq7kBFJRcz2dlciPMW1Te4ouKh5rEYN4oJQr5kXdNRyqTSDpDz0jDlR4wR00oG3x9WRt");
+        if($payment_method == "stripe"){
+            $stripe = new StripeService();
+            $session = $stripe->sessionCreate($amount, $user_uuid);
+            return $session->url;
+        }elseif($payment_method == "tabby"){
+            $tabby = new TabbyService();
 
-        // Calculate the order amount in cents
-        $amount = $amount * 100;
+            $items = collect([]); // array to save your products
 
-        // Create a new Stripe checkout session
-        $session = StripeSession::create([
-            'payment_method_types' => ['card'],
-            'line_items' => [[
-                'price_data' => [
-                    'currency' => 'aed',
-                    'product_data' => [
-                        'name' => 'Custom Payment',
-                    ],
-                    'unit_amount' => $amount,
-                ],
+            // add first product
+            $items->push([
+                'title' => 'Document Translating',
                 'quantity' => 1,
-            ]],
-            'metadata' => [
-                'user_uuid' => $user_uuid,
-            ],
-            'mode' => 'payment',
-            'success_url' => url('/payment_status/success?session_id={CHECKOUT_SESSION_ID}'),
-            'cancel_url' => url('/payment_status/cancel?session_id={CHECKOUT_SESSION_ID}'),
-        ]);
+                'unit_price' => $amount,
+                'category' => 'document',
+            ]);
 
-        // Redirect to Stripe Checkout
-        return $session->url;
+            $order_data = [
+                'amount'=> $amount,
+                'buyer_email' => 'ali@gmail.com',
+                'order_id'=> $user_uuid,
+                'success-url'=> "/",
+                'cancel-url' => "/",
+                'failure-url' => "/",
+                'items' => $items,
+            ];
+
+            $payment = $tabby->createSession($order_data);
+            $id = $payment->id;
+            return $payment->configuration->available_products->installments[0]->web_url;
+        }
+
+        return url('/');
     }
 
     public function payment_status(Request $request)

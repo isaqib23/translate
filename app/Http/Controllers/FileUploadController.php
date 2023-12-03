@@ -7,6 +7,8 @@ use App\Models\FileUpload;
 use App\Models\UserPayment;
 use App\Models\UserRequests;
 use Illuminate\Support\Str;
+use App\Mail\SendEmailNotification;
+use Illuminate\Support\Facades\Mail;
 
 class FileUploadController extends Controller
 {
@@ -19,6 +21,7 @@ class FileUploadController extends Controller
 
         $userRequest = new UserRequests;
         $userRequest->user_uuid = (string) Str::uuid();
+        $userRequest->translate_type = ($request->input('category_type') == 1) ? $request->input('translate_type') : null;
         $userRequest->from = ($request->input('category_type') == 1) ? $request->input('from') : null;
         $userRequest->to = ($request->input('category_type') == 1) ? $request->input('to') : null;
         $userRequest->category_type = $request->input('category_type');
@@ -45,6 +48,14 @@ class FileUploadController extends Controller
             $userPayment->status = "pending";
             $userPayment->save();
         }
+
+        $checkInput = identifyAndFormat($request->input('mobile'));
+        if($checkInput["type"] == "email"){
+            $subject = "New Order Received";
+            $message = ucwords($request->input('email')) ." - " .$request->input('mobile')." submitted  a new order number: ". $userRequest->user_uuid;
+            Mail::to($checkInput["type"])->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
+        }
+
         return response()->json([
             'success' => true,
             'data' => $userRequest->user_uuid,
@@ -71,6 +82,8 @@ class FileUploadController extends Controller
                 return ["message" => "From Country is required"];
             } elseif (!$request->has('to') || $request->input('to') == "") {
                 return ["message" => "To Country is required"];
+            } elseif (!$request->has('translate_type') || $request->input('translate_type') == "") {
+                return ["message" => "Translation Type is required"];
             }
         } elseif ($request->input('category_type') == 2) {
             if (!$request->has('draft')) {
