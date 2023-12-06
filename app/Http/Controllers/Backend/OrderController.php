@@ -25,7 +25,7 @@ class OrderController extends Controller
         if (is_null($this->user) || !$this->user->can('order.view')) {
             abort(403, 'Sorry !! You are Unauthorized to view any role !');
         }
-        $users = UserRequests::orderBy('user_requests.id', 'desc')->paginate(10);
+        $users = UserRequests::has('payment')->orderBy('user_requests.id', 'desc')->paginate(10);
         return view('backend.pages.requests.index', ['users' => $users]);
     }
 
