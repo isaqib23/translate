@@ -13,7 +13,7 @@
 <div class="row featurette">
     <div class="col-md-4" style="text-align: center">
         <div id="timer" class="alert alert-primary mt-3" role="alert">
-            119
+            02:00
         </div>
         <div id="payment" class="d-none">
             <div class="alert alert-success mt-3" role="alert">
