@@ -13,7 +13,7 @@
 <div class="row featurette">
     <div class="col-md-4" style="text-align: center">
         <div id="timer" class="alert alert-primary mt-3" role="alert">
-            60
+            119
         </div>
         <div id="payment" class="d-none">
             <div class="alert alert-success mt-3" role="alert">
@@ -21,7 +21,7 @@
             </div>
             <button id="clickToPay" class="btn btn-success btn-block btn-lg">Continue to Payment</button>
             <br>
-            <a style="margin-top:10px" class="text-sm btn btn-sm btn-outline-success" href="https://wa.me/+971567463549?text=Hello%20I%20have%20an%20inquiry" target="_blank">for any clarification <i class="fab fa-whatsapp"></i></a>
+            <a style="margin-top:10px" class="btn btn-block btn-lg btn-outline-primary" href="https://wa.me/+971567463549?text=Hello%20I%20have%20an%20inquiry" target="_blank">for any clarification <i class="fab fa-whatsapp"></i></a>
         </div>
     </div>
     <div class="col-md-8" style="text-align: center">
@@ -31,13 +31,15 @@
 <script type="text/javascript" src="https://www.foloosi.com/js/foloosipay.v2.js"></script>
 <script type="text/javascript">
 function startCountdown(duration, display) {
-    var timer = duration, seconds;
+    var timer = duration, minutes, seconds;
     var countdownInterval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
+        minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.textContent = seconds;
+        display.textContent = minutes + ":" + seconds;
 
         if (--timer < 0) {
             timer = duration;
@@ -48,10 +50,12 @@ function startCountdown(duration, display) {
 }
 
 window.onload = function () {
-    var sixtySeconds = 59,
+    var twoMinutes = 120,  // 120 seconds for 2 minutes
         display = document.querySelector('#timer');
-    startCountdown(sixtySeconds, display);
+    startCountdown(twoMinutes, display);
 };
+
+
     function fetchData() {
         $.ajax({
             url: '/verify_status/<?=request()->segment(2)?>',

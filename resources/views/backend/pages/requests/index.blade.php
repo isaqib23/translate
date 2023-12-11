@@ -52,6 +52,7 @@ Orders Page - Admin Panel
                                     <th width="10%">Order Type</th>
                                     <th width="10%">Name</th>
                                     <th width="10%">Email/Mobile</th>
+                                    <th width="10%">Urgent</th>
                                     <th width="10%">Created At</th>
                                     <th width="10%">Status</th>
                                     <th width="15%">Action</th>
@@ -74,6 +75,7 @@ Orders Page - Admin Panel
                                     </td>
                                     <td>{{ $user->email }}</td>
                                     <td>{{ $user->mobile }}</td>
+                                    <td>{{ ($user->urgent == 1) ? 'Yes' : 'No' }}</td>
                                     <td>{{ $user->created_at }}</td>
                                     <td>
                                         <span class="badge badge-info mr-1">

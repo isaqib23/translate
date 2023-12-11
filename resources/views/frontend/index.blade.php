@@ -143,7 +143,7 @@
 <!-- form start -->
 <div class="row featurette">
 <div style="margin: 0 auto; text-align: center">
-    <h2>Translate your Docs</h2>
+    <h2>Starting from 25 AED/Page (250 words)</h2>
 </div>
 <form class="row g-3" action="<?=url('/upload')?>" method="post" id="mainForm" enctype="multipart/form-data">
   <div class="row" style="margin-bottom: 35px">
@@ -233,15 +233,15 @@
 <div class="row">
     <div class="col-md-12">
          <div class="cc-selector">
-         @for ($i = 9; $i> 0; $i--)
-            @if($i == 9)
-                <input checked id="from_flag{{$i}}" type="radio" name="from" value="{{$i}}" />
-                <label class="drinkcard-cc flag{{$i}}" for="from_flag{{$i}}"></label>
+         @foreach (getCountries() as $key => $country)
+            @if($key == 1)
+                <input type="radio" class="btn-check" name="from" value="{{$key}}" id="fromRadio{{$key}}" autocomplete="off" checked>
+                <label class="btn btn-outline-success" for="fromRadio{{$key}}"><?=$country?></label>
             @else
-                <input id="from_flag{{$i}}" type="radio" name="from" value="{{$i}}" />
-                <label class="drinkcard-cc flag{{$i}}" for="from_flag{{$i}}"></label>
+                <input type="radio" class="btn-check" name="from" value="{{$key}}" id="fromRadio{{$key}}" autocomplete="off">
+                <label class="btn btn-outline-success" for="fromRadio{{$key}}"><?=$country?></label>
             @endif
-         @endfor
+         @endforeach
         </div>
     </div>
 </div>
@@ -254,15 +254,16 @@
 <div class="row" style="margin-bottom: 20px;">
     <div class="col-md-12">
          <div class="cc-selector">
-         @for ($i = 1; $i <= 9; $i++)
-            @if($i == 1)
-                <input checked id="to_flag{{$i}}" type="radio" name="to" value="{{$i}}" />
-                <label class="drinkcard-cc flag{{$i}}" for="to_flag{{$i}}"></label>
-            @else
-                <input id="to_flag{{$i}}" type="radio" name="to" value="{{$i}}" />
-                <label class="drinkcard-cc flag{{$i}}" for="to_flag{{$i}}"></label>
-            @endif
-         @endfor
+         <?php $reversedLanguages = array_reverse(getCountries(), true); ?>
+         @foreach ($reversedLanguages as $key => $country)
+             @if($key == 10)
+                 <input type="radio" class="btn-check" name="to" value="{{$key}}" id="toRadio{{$key}}" autocomplete="off" checked>
+                 <label class="btn btn-outline-success" for="toRadio{{$key}}"><?=$country?></label>
+             @else
+                 <input type="radio" class="btn-check" name="to" value="{{$key}}" id="toRadio{{$key}}" autocomplete="off">
+                 <label class="btn btn-outline-success" for="toRadio{{$key}}"><?=$country?></label>
+             @endif
+          @endforeach
         </div>
     </div>
 </div>
@@ -275,6 +276,12 @@
       <label class="form-check-label" for="id_check">Include IDs or Passport <span class="text-danger text-bold">*</span></label>
     </div>
   </div>
+  <div class="row" id="id_check1" style="margin-bottom: 30px;">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" name="urgent" type="checkbox" id="id_check1" value="1">
+        <label class="form-check-label" for="id_check1">Urgent</label>
+      </div>
+    </div>
   <div class="col-12">
   <div class="d-grid gap-2 col-6 mx-auto">
     <button class="btn btn-primary btn-lg" id="submitForm" type="submit">Submit</button>

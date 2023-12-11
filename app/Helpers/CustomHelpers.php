@@ -5,15 +5,16 @@ use PHPMailer\PHPMailer\Exception;
 if (!function_exists('getCountryName')) {
     function getCountryName($key) {
         $arr = [
-            1 => 'English',
-            2 => 'Spanish',
-            3 => 'Hindi',
-            4 => 'Japanese',
-            5 => 'Portuguese',
-            6 => 'Chinese',
-            7 => 'Russian',
-            8 => 'Persian',
-            9 => 'Arabic'
+           1 => 'Arabic',
+           2 => 'English',
+           3 => 'Russian',
+           4 => 'German',
+           5 => 'German',
+           6 => 'Chinese',
+           7 => 'Spanish',
+           8 => 'Italy',
+           9 => 'Farsi',
+           10 => 'Turkish'
         ];
 
         return $arr[$key] ?? null;
@@ -60,6 +61,23 @@ if (!function_exists('getNotaryCategories')) {
            27 => "Approval of Signature",
            28 => "Assignments"
         );
+    }
+}
+
+if (!function_exists('getCountries')) {
+    function getCountries() {
+        return [
+                  1 => 'Arabic',
+                  2 => 'English',
+                  3 => 'Russian',
+                  4 => 'German',
+                  5 => 'German',
+                  6 => 'Chinese',
+                  7 => 'Spanish',
+                  8 => 'Italy',
+                  9 => 'Farsi',
+                  10 => 'Turkish'
+              ];
     }
 }
 

@@ -24,6 +24,7 @@ class FileUploadController extends Controller
         $userRequest->translate_type = ($request->input('category_type') == 1) ? $request->input('translate_type') : null;
         $userRequest->from = ($request->input('category_type') == 1) ? $request->input('from') : null;
         $userRequest->to = ($request->input('category_type') == 1) ? $request->input('to') : null;
+        $userRequest->urgent = ($request->has('urgent')) ? $request->input('urgent') : 0;
         $userRequest->category_type = $request->input('category_type');
         $userRequest->category = ($request->input('category_type') == 2) ? json_encode($request->input('draft')) : json_encode($request->input('notary'));
         $userRequest->email = $request->input('email');
