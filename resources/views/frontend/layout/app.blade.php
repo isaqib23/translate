@@ -62,7 +62,7 @@
       }
 
       .whatsapp-fab {
-          animation: blinker 1s linear infinite;
+          animation: blinker 5s linear infinite;
       }
 
     </style>

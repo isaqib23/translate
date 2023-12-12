@@ -121,4 +121,14 @@ class FrontendController extends Controller
         }
     }
 
+    public function bio(Request $request)
+    {
+            return view('frontend.bio');
+    }
+
+    public function services(Request $request)
+    {
+            return view('frontend.services');
+    }
+
 }

@@ -75,7 +75,14 @@ Orders Page - Admin Panel
                                     </td>
                                     <td>{{ $user->email }}</td>
                                     <td>{{ $user->mobile }}</td>
-                                    <td>{{ ($user->urgent == 1) ? 'Yes' : 'No' }}</td>
+                                    <td>
+                                    <?php if($user->urgent == 1){
+                                        echo '<i class="fa fa-flag text-danger text-bold" aria-hidden="true"></i>';
+                                     }else{
+                                        echo '<i class="fa fa-flag text-dark" aria-hidden="true"></i>';
+                                     }
+                                    ?>
+                                    </td>
                                     <td>{{ $user->created_at }}</td>
                                     <td>
                                         <span class="badge badge-info mr-1">
