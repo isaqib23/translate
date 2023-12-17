@@ -103,10 +103,10 @@
             <div class="col-lg-4 col-md-6 col-sm-8" style="position:relative">
             <div class="single-services mb-30">
                 <div class="features-icon">
-                    <img src="{{ asset('frontend/img/a.png') }}" alt="">
+                    <img src="{{ asset('frontend/img/b.png') }}" alt="">
                 </div>
                 <div class="features-caption">
-                    <h3>60+ UX courses</h3>
+                    <h3>Our Profile</h3>
                     <p>The automated process all your website tasks.</p>
                 </div>
             </div>
@@ -114,11 +114,11 @@
 
              <div class="col-lg-4 col-md-6 col-sm-8" style="position:relative">
                  <div class="single-services mb-30">
-                     <div class="features-icon">
+                     <!--<div class="features-icon">
                          <img src="{{ asset('frontend/img/b.png') }}" alt="">
-                     </div>
+                     </div>-->
                      <div class="features-caption">
-                         <h3>60+ UX courses</h3>
+                         <h3>BIO</h3>
                          <p>The automated process all your website tasks.</p>
                      </div>
                  </div>
@@ -127,10 +127,12 @@
              <div class="col-lg-4 col-md-6 col-sm-8" style="position:relative">
                  <div class="single-services mb-30">
                      <div class="features-icon">
+                         <a href="https://maps.app.goo.gl/p5BqnAJmWiofrFjB9">
                          <img src="{{ asset('frontend/img/c.png') }}" alt="">
+                         </a>
                      </div>
                      <div class="features-caption">
-                         <h3>60+ UX courses</h3>
+                         <h3>Visit our office</h3>
                          <p>The automated process all your website tasks.</p>
                      </div>
                  </div>
