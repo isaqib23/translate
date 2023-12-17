@@ -115,7 +115,7 @@
              <div class="col-lg-4 col-md-6 col-sm-8" style="position:relative">
                  <div class="single-services mb-30">
                      <div class="features-icon">
-                         <img src="{{ asset('frontend/img/a.jpeg') }}" alt="">
+                         <img style="width: 62px; height: 69px" src="{{ asset('frontend/img/a.jpeg') }}" alt="">
                      </div>
                      <div class="features-caption">
                          <h3><a href="/bio">BIO</a></h3>
