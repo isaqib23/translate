@@ -106,7 +106,7 @@
                     <img src="{{ asset('frontend/img/b.png') }}" alt="">
                 </div>
                 <div class="features-caption">
-                    <h3><a href="/profile">Our Profile</a></h3>
+                    <h3><a style="color: #5a5a5a; text-decoration: none;"  href="/profile">Our Profile</a></h3>
                     <p>The automated process all your legal tasks.</p>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                          <img style="width: 62px; height: 69px" src="{{ asset('frontend/img/a.jpeg') }}" alt="">
                      </div>
                      <div class="features-caption">
-                         <h3><a href="/bio">BIO</a></h3>
+                         <h3><a style="color: #5a5a5a; text-decoration: none;" href="/bio">BIO</a></h3>
                          <p>The automated process all your legal tasks.</p>
                      </div>
                  </div>
@@ -132,7 +132,7 @@
                          </a>
                      </div>
                      <div class="features-caption">
-                         <h3><a href="https://maps.app.goo.gl/p5BqnAJmWiofrFjB9">Visit our office</a></h3>
+                         <h3><a style="color: #5a5a5a; text-decoration: none;"  href="https://maps.app.goo.gl/p5BqnAJmWiofrFjB9">Visit our office</a></h3>
                          <p>The automated process all your legal tasks.</p>
                      </div>
                  </div>
