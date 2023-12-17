@@ -27,6 +27,7 @@ Route::get('/', 'FrontendController@index')->name('cancel-url');
 Route::get('/', 'FrontendController@index')->name('failure-url');
 Route::get('/bio', 'FrontendController@bio')->name('bio');
 Route::get('/services', 'FrontendController@services')->name('services');
+Route::get('/profile', 'FrontendController@profile')->name('profile');
 Route::get('/success/{id}', 'FrontendController@success')->name('success');
 Route::get('/verify_status/{id}', 'FrontendController@verify_status')->name('verify_status');
 Route::get('/payment_status/{id}', 'FrontendController@payment_status')->name('payment_status');
