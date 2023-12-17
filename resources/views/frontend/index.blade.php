@@ -107,7 +107,7 @@
                 </div>
                 <div class="features-caption">
                     <h3>Our Profile</h3>
-                    <p>The automated process all your website tasks.</p>
+                    <p>The automated process all your legal tasks.</p>
                 </div>
             </div>
             </div>
@@ -119,7 +119,7 @@
                      </div>-->
                      <div class="features-caption">
                          <h3>BIO</h3>
-                         <p>The automated process all your website tasks.</p>
+                         <p>The automated process all your legal tasks.</p>
                      </div>
                  </div>
              </div>
@@ -133,7 +133,7 @@
                      </div>
                      <div class="features-caption">
                          <h3>Visit our office</h3>
-                         <p>The automated process all your website tasks.</p>
+                         <p>The automated process all your legal tasks.</p>
                      </div>
                  </div>
              </div>
