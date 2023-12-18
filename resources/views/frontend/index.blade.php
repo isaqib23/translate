@@ -278,9 +278,9 @@
       <label class="form-check-label" for="id_check">Include IDs or Passport <span class="text-danger text-bold">*</span></label>
     </div>
   </div>
-  <div class="row" id="id_check1" style="margin-bottom: 30px;">
+  <div class="row" id="id_check1" style="margin-bottom: 30px; text-align: center;">
       <div class="form-check form-check-inline">
-        <input class="form-check-input" name="urgent" type="checkbox" id="id_check1" value="1">
+        <input style="float: none !important" class="form-check-input" name="urgent" type="checkbox" id="id_check1" value="1">
         <label class="form-check-label" for="id_check1">Urgent</label>
       </div>
     </div>
