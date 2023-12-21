@@ -136,4 +136,9 @@ class FrontendController extends Controller
             return view('frontend.profile');
     }
 
+    public function pricing(Request $request)
+    {
+            return view('frontend.pricing');
+    }
+
 }

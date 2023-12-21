@@ -19,6 +19,8 @@
       text-align: center; /* Center the description text */
       margin-top: 20px; /* Spacing between the image container and the text */
       margin-bottom: 100px;
+          font-size: 25px;
+          font-weight: 700;
     }
 </style>
 <div class="container mt-5">
