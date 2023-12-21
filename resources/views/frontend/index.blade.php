@@ -281,7 +281,7 @@
   <div class="row" id="id_check1" style="margin-bottom: 30px; text-align: center;">
       <div class="form-check form-check-inline">
         <input style="float: none !important; top: 6px !important; position: relative;" class="form-check-input" name="urgent" type="checkbox" id="id_check1" value="1">
-        <label class="form-check-label" for="id_check1" style="font-size:1.5rem">Urgent</label>
+        <label class="form-check-label" for="id_check1" style="font-size:1.5rem; font-weight: 500">Urgent</label>
       </div>
     </div>
   <div class="col-12">
