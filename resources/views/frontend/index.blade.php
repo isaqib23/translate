@@ -145,7 +145,7 @@
 <!-- form start -->
 <div class="row featurette">
 <div style="margin: 0 auto; text-align: center">
-    <h2>Notary Public E-Services Attestation in collaboration with M/s. Mohammad Al Najjar Advocates and Legal Consultants.</h2>
+    <h2 class="d-none" id="note">Notary Public E-Services Attestation in collaboration with M/s. Mohammad Al Najjar Advocates and Legal Consultants.</h2>
     <h2>Starting from 25 AED/Page (250 words)</h2>
 </div>
 <form class="row g-3" action="<?=url('/upload')?>" method="post" id="mainForm" enctype="multipart/form-data">
@@ -343,7 +343,9 @@ $('input[type="radio"][name="category_type"]').change(function() {
             $("#drafting").removeClass("d-none");
             $("#id_check").removeClass("d-none");
             $("#notary").addClass("d-none");
+            $("#note").addClass("d-none");
             $("#countries").hide();
+            $("#translate_type").hide();
             $("#translate_type").hide();
         }else if(selectedValue == 3){
             $("#drafting").addClass("d-none");
@@ -351,12 +353,14 @@ $('input[type="radio"][name="category_type"]').change(function() {
             $("#translate_type").hide();
             $("#notary").removeClass("d-none");
             $("#id_check").removeClass("d-none");
+            $("#note").removeClass("d-none");
         }else{
             $("#countries").show();
             $("#translate_type").show();
             $("#drafting").addClass("d-none");
             $("#notary").addClass("d-none");
             $("#id_check").addClass("d-none");
+            $("#note").addClass("d-none");
         }
     });
 
