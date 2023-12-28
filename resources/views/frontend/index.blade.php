@@ -145,6 +145,7 @@
 <!-- form start -->
 <div class="row featurette">
 <div style="margin: 0 auto; text-align: center">
+    <h2>Notary Public E-Services Attestation in collaboration with M/s. Mohammad Al Najjar Advocates and Legal Consultants.</h2>
     <h2>Starting from 25 AED/Page (250 words)</h2>
 </div>
 <form class="row g-3" action="<?=url('/upload')?>" method="post" id="mainForm" enctype="multipart/form-data">
