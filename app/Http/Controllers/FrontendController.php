@@ -99,7 +99,7 @@ class FrontendController extends Controller
 
     public function payment_status(Request $request)
     {
-        Stripe::setApiKey("sk_test_51Nm90nE1ydFAXdZx3MIiBQnxQW3NmFjq7kBFJRcz2dlciPMW1Te4ouKh5rEYN4oJQr5kXdNRyqTSDpDz0jDlR4wR00oG3x9WRt");
+        Stripe::setApiKey("sk_test_51OH1CNDBP9nRUWw0d2gBt7O1KWsA2ymtpj99okR9Z5IjnOl2GOrH3IXQBF8Rsu2SFkNfbuxN4PBrlFaLMdPMOPGr00rnLUTGr8");
 
         $sessionId = $request->query('session_id');
         if ($sessionId) {
