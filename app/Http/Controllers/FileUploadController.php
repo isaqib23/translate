@@ -122,5 +122,7 @@ class FileUploadController extends Controller
             //Mail::to("info@scrumsoftwares.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
             Mail::to("isaqib23@gmail.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
         }
+
+        return $checkInput;
     }
 }
