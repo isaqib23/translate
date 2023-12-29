@@ -52,7 +52,7 @@ class FileUploadController extends Controller
 
         $checkInput = identifyAndFormat($request->input('mobile'));
         //if($checkInput["type"] == "email"){
-            $subject = "Upload - ".$userRequest->user_uuid;
+            $subject = "Upload - ".ucwords($request->input('email'))." - ".$request->input('mobile');
             $message = "New Order - ".$userRequest->user_uuid." is placed";
             //Mail::to("info@scrumsoftwares.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
             Mail::to("gm@translingu.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));

@@ -83,7 +83,7 @@ Orders Page - Admin Panel
                                      }
                                     ?>
                                     </td>
-                                    <td>{{ $user->created_at }}</td>
+                                    <td>{{ convertTime($user->created_at) }}</td>
                                     <td>
                                         <span class="badge badge-info mr-1">
                                             {{ ucfirst($user->payment->status) }}

@@ -2,6 +2,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+use Carbon\Carbon;
+
 if (!function_exists('getCountryName')) {
     function getCountryName($key) {
         $arr = [
@@ -104,5 +106,14 @@ if (!function_exists('identifyAndFormat')) {
 
             return ["type" => "mobile", "input" => $input];
         }
+    }
+}
+
+if (!function_exists('convertTime')) {
+    function convertTime($utcDateTimeString) {
+        $utcDateTime = Carbon::parse($utcDateTimeString, 'UTC');
+        $dubaiTime = $utcDateTime->setTimezone('Asia/Dubai');
+
+        return $dubaiTime->toDateTimeString();
     }
 }
