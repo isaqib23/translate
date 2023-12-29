@@ -35,6 +35,7 @@ Route::get('/payment_status/{id}', 'FrontendController@payment_status')->name('p
 Route::get('/verify_payment/{id}/{type}', 'FrontendController@verify_payment')->name('verify_payment');
 Route::post('/upload', 'FileUploadController@upload')->name('upload');
 Route::post('/upload_files', 'FileUploadController@upload_files')->name('upload_files');
+Route::post('/send_notification', 'FileUploadController@sendNotification')->name('sendNotification');
 
 //Route::get('/', [FrontendController::class, 'index']);
 //Route::get('/success/{id}', [FrontendController::class, 'success']);

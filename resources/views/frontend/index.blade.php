@@ -364,5 +364,35 @@ $('input[type="radio"][name="category_type"]').change(function() {
         }
     });
 
+    var timeout;
+    function checkInputsAndSendRequest() {
+            var email = $('#floatingInput').val().trim();
+            var name = $('#floatingPassword').val().trim();
+
+            // Check if both fields are not empty
+            if (name !== '' && email !== '') {
+                // Send request to the server
+                $.ajax({
+                    url: '<?=url('/send_notification')?>',
+                    type: 'POST',
+                    data: {
+                        name: name,
+                        email: email
+                    },
+                    success: function(response) {
+                        console.log('Server response:', response);
+                    },
+                    error: function(error) {
+                        console.log('Error:', error);
+                    }
+                });
+            }
+        }
+
+        // Attach event listeners
+        $('#floatingInput, #floatingPassword').on('input', function() {
+           clearTimeout(timeout);
+           timeout = setTimeout(checkInputsAndSendRequest, 1500); // Adjust the time (1500 ms) as needed
+       });
 </script>
 @endsection

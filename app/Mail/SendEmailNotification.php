@@ -39,7 +39,7 @@ class SendEmailNotification extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Send Email Notification',
+            subject: $this->subject,
         );
     }
 

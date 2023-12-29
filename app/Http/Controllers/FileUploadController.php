@@ -52,8 +52,8 @@ class FileUploadController extends Controller
 
         $checkInput = identifyAndFormat($request->input('mobile'));
         if($checkInput["type"] == "email"){
-            $subject = "New Order Received";
-            $message = ucwords($request->input('email')) ." - " .$request->input('mobile')." submitted  a new order number: ". $userRequest->user_uuid;
+            $subject = "New Order - ".$userRequest->user_uuid;
+            $message = "New Order - ".$userRequest->user_uuid." is placed"
             //Mail::to("info@scrumsoftwares.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
             Mail::to("isaqib23@gmail.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
         }
@@ -112,5 +112,15 @@ class FileUploadController extends Controller
         }
 
         return ["success" => true];
+    }
+
+    public function sendNotification(){
+        $checkInput = identifyAndFormat($request->input('mobile'));
+        if($checkInput["type"] == "email"){
+            $subject = ucwords($request->input('email'))." - ".$request->input('email');
+            $message = "New order in preparation";
+            //Mail::to("info@scrumsoftwares.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
+            Mail::to("isaqib23@gmail.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
+        }
     }
 }
