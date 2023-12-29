@@ -376,7 +376,7 @@ $('input[type="radio"][name="category_type"]').change(function() {
                     url: '<?=url('/send_notification')?>',
                     type: 'POST',
                     data: {
-                        name: name,
+                        mobile: name,
                         email: email,
                         _token: $('meta[name="csrf-token"]').attr('content'),
                     },
