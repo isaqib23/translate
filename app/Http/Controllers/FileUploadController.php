@@ -55,7 +55,7 @@ class FileUploadController extends Controller
             $subject = "New Order - ".$userRequest->user_uuid;
             $message = "New Order - ".$userRequest->user_uuid." is placed";
             //Mail::to("info@scrumsoftwares.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
-            Mail::to("gm@translingu.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
+            Mail::to("isaqib23@gmail.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
         }
 
         return response()->json([
@@ -120,7 +120,7 @@ class FileUploadController extends Controller
             $subject = ucwords($request->input('email'))." - ".$request->input('mobile');
             $message = "New order in preparation";
             //Mail::to("info@scrumsoftwares.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
-            Mail::to("gm@translingu.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
+            Mail::to("isaqib23@gmail.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
         }
 
         return $checkInput;
