@@ -1,5 +1,4 @@
 <x-mail::message>
-# Hello {{ $name }}
 
 {{ $message }}
 
