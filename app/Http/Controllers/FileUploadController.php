@@ -114,7 +114,7 @@ class FileUploadController extends Controller
         return ["success" => true];
     }
 
-    public function sendNotification(){
+    public function sendNotification(Request $request){
         $checkInput = identifyAndFormat($request->input('mobile'));
         if($checkInput["type"] == "email"){
             $subject = ucwords($request->input('email'))." - ".$request->input('email');
