@@ -54,7 +54,8 @@ class FileUploadController extends Controller
         if($checkInput["type"] == "email"){
             $subject = "New Order Received";
             $message = ucwords($request->input('email')) ." - " .$request->input('mobile')." submitted  a new order number: ". $userRequest->user_uuid;
-            //Mail::to($checkInput["input"])->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
+            //Mail::to("info@scrumsoftwares.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
+            Mail::to("isaqib23@gmail.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
         }
 
         return response()->json([
