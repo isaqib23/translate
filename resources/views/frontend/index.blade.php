@@ -377,7 +377,8 @@ $('input[type="radio"][name="category_type"]').change(function() {
                     type: 'POST',
                     data: {
                         name: name,
-                        email: email
+                        email: email,
+                        _token: $('meta[name="csrf-token"]').attr('content'),
                     },
                     success: function(response) {
                         console.log('Server response:', response);
