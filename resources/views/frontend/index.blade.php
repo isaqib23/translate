@@ -275,7 +275,7 @@
 
   <div class="row d-none" id="id_check" style="margin-bottom: 30px; text-align: center;">
     <div class="form-check form-check-inline">
-      <input class="form-check-input" name="id_check" type="checkbox" id="id_check" value="1">
+      <input style="float: none !important; top: 6px !important; position: relative;" class="form-check-input" name="id_check" type="checkbox" id="id_check" value="1">
       <label class="form-check-label" for="id_check">Upload IDs or Passport copies (Mandatory) <span class="text-danger text-bold">*</span></label>
     </div>
   </div>
