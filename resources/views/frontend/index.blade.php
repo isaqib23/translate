@@ -391,9 +391,13 @@ $('input[type="radio"][name="category_type"]').change(function() {
         }
 
         // Attach event listeners
-        $('#floatingInput, #floatingPassword').on('input', function() {
-           clearTimeout(timeout);
-           timeout = setTimeout(checkInputsAndSendRequest, 1500); // Adjust the time (1500 ms) as needed
-       });
+        $('#floatingInput, #floatingPassword').on('focusout', function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                if (!$(':focus').is('#floatingInput, #floatingPassword')) {
+                    checkInputsAndSendRequest();
+                }
+            }, 1500); // Adjust the time (1500 ms) as needed
+        });
 </script>
 @endsection
