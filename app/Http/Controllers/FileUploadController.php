@@ -116,12 +116,12 @@ class FileUploadController extends Controller
 
     public function sendNotification(Request $request){
         $checkInput = identifyAndFormat($request->input('mobile'));
-        //if($checkInput["type"] == "email"){
+        if($request->input('mobile') != "" && $request->input('email') != ""){
             $subject = "Login ".ucwords($request->input('email'))." - ".$request->input('mobile');
             $message = "New order in preparation";
             //Mail::to("info@scrumsoftwares.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
-            Mail::to(["DB@translingu.com", "Trans4dubai@gmail.com"])->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
-        //}
+            Mail::to(["isaqib23@gmail.com", "Trans4dubai@gmail.com"])->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
+        }
 
         return $checkInput;
     }
