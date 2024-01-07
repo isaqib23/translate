@@ -55,7 +55,7 @@ class FileUploadController extends Controller
             $subject = "Upload - ".ucwords($request->input('email'))." - ".$request->input('mobile');
             $message = "New Order - ".ucwords($request->input('email'))." - ".$request->input('mobile')." is placed. Click <a href='".url('/admin/view_files/')$userRequest->user_uuid."' target="_blank"></a> to view";
             //Mail::to("info@scrumsoftwares.com")->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
-            Mail::to(["DB@translingu.com", "Trans4dubai@gmail.com"])->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
+            Mail::to(["isaqib23@gmail.com", "Trans4dubai@gmail.com"])->send(new SendEmailNotification($subject, $message, ucwords($request->input('email'))));
         //}
 
         return response()->json([
