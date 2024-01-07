@@ -275,8 +275,8 @@
 
   <div class="row d-none" id="id_check" style="margin-bottom: 30px; text-align: center;">
     <div class="form-check form-check-inline">
-      <input style="float: none !important; top: 1px !important; position: relative;" class="form-check-input" name="id_check" type="checkbox" id="id_check" value="1">
-      <label class="form-check-label" for="id_check">Upload IDs or Passport copies (Mandatory) <span class="text-danger text-bold">*</span></label>
+      <input style="float: none !important; top: 6px !important; position: relative;" class="form-check-input" name="id_check" type="checkbox" id="id_check" value="1">
+      <label class="form-check-label" for="id_check" style="font-size:1.5rem; font-weight: 500">Upload IDs or Passport copies (Mandatory) <span class="text-danger text-bold">*</span></label>
     </div>
   </div>
   <div class="row" id="id_check1" style="margin-bottom: 30px; text-align: center;">
