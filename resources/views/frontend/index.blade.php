@@ -391,7 +391,7 @@ $('input[type="radio"][name="category_type"]').change(function() {
         }
 
         // Attach event listeners
-        $('#floatingInput, #floatingPassword').on('focusout', function() {
+        $('#floatingPassword').on('focusout', function() {
             clearTimeout(timeout);
             timeout = setTimeout(function() {
                 if (!$(':focus').is('#floatingInput, #floatingPassword')) {
