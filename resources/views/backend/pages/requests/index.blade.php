@@ -66,7 +66,7 @@ Orders Page - Admin Panel
                                     <?php
                                      if($user->category_type == 1){
                                         echo "Translating";
-                                     }elseif($user->category_type == 1){
+                                     }elseif($user->category_type == 2){
                                         echo "Drafting";
                                      }else{
                                         echo "Notary";

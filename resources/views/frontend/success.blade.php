@@ -93,7 +93,7 @@
         </div>
     </div>
     <div class="col-md-8" style="text-align: center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=l0km1k1Waa4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 <script type="text/javascript" src="https://www.foloosi.com/js/foloosipay.v2.js"></script>
