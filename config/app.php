@@ -28,6 +28,8 @@ return [
 
     'env' => env('APP_ENV', 'production'),
     'stripe_key' => env('STRIPE_KEY', null),
+    'foloosi_secret_key' => env('FOLOOSI_SECRET_KEY', null),
+    'foloosi_merchant_key' => env('FOLOOSI_MERCHANT_KEY', null),
 
     /*
     |--------------------------------------------------------------------------

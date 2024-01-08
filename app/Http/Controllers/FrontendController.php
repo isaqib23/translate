@@ -66,6 +66,8 @@ class FrontendController extends Controller
             $stripe = new StripeService();
             $session = $stripe->sessionCreate($amount, $user_uuid);
             return $session->url;
+        }elseif($payment_method == "foloosi"){
+            return $this->foloosi_payment($amount, $user_uuid);
         }elseif($payment_method == "tabby"){
             $tabby = new TabbyService();
 
@@ -118,6 +120,12 @@ class FrontendController extends Controller
              ->update(['status' => $status]);
 
             return view('frontend.payment_status', compact('status'));
+        }else{
+            $status = "cancel";
+            if($request->segment(2) == "success"){
+                $status = "paid";
+            }
+            return view('frontend.payment_status', compact('status'));
         }
     }
 
@@ -139,6 +147,50 @@ class FrontendController extends Controller
     public function pricing(Request $request)
     {
             return view('frontend.pricing');
+    }
+
+    public function foloosi_payment_status(Request $request)
+    {
+        $userPayment = new UserPayment;
+        $userPayment::whereNotNull('amount')
+         ->where('amount', '<>', '')
+         ->where('user_uuid', $request->segment(2))
+         ->update(['status' => "paid"]);
+
+        if($_POST['status'] == "success"){
+            return redirect("/payment_status/success");
+        }else{
+            return redirect("/payment_status/cancel");
+        }
+    }
+
+    public function foloosi_payment($amount, $user_uuid){
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.foloosi.com/aggregatorapi/web/initialize-setup",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_POSTFIELDS => "transaction_amount=".$amount."&customer_unique_identifier=".$user_uuid."&currency=AED&customer_city=Dubai&billing_country=ARE&billing_state=Dubai&site_return_url=".url('/foloosi_payment_status/'.$user_uuid),
+            CURLOPT_HTTPHEADER => array(
+                'content-type: application/x-www-form-urlencoded',
+                'merchant_key: '.config('app.foloosi_secret_key')
+            ),
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+        if ($err) {
+            return ["status" => false, "message" => $err];
+        } else {
+            $responseData = json_decode($response,true);
+            $reference_token = $responseData['data']['reference_token'];
+
+            return ["status" => true, "message" => $reference_token, "is_foloosi" => true, "merchant_key" => config('app.foloosi_merchant_key')];
+        }
     }
 
 }

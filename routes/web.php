@@ -32,6 +32,7 @@ Route::get('/pricing', 'FrontendController@pricing')->name('pricing');
 Route::get('/success/{id}', 'FrontendController@success')->name('success');
 Route::get('/verify_status/{id}', 'FrontendController@verify_status')->name('verify_status');
 Route::get('/payment_status/{id}', 'FrontendController@payment_status')->name('payment_status');
+Route::post('/foloosi_payment_status/{id}', 'FrontendController@foloosi_payment_status')->name('foloosi_payment_status');
 Route::get('/verify_payment/{id}/{type}', 'FrontendController@verify_payment')->name('verify_payment');
 Route::post('/upload', 'FileUploadController@upload')->name('upload');
 Route::post('/upload_files', 'FileUploadController@upload_files')->name('upload_files');
