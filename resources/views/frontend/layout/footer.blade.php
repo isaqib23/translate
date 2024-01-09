@@ -1,8 +1,15 @@
-<img style="display: inline-block; width: 120px" src="{{ asset('frontend/img/user_guide.jpeg') }}" />
+<img style="display: inline-block; width: 60px" src="{{ asset('frontend/img/user_guide.jpg') }}" />
 
-<button type="button" href="https://scribehow.com/shared/How_to_Submit_a_Translation_Order_and_Make_a_Payment__rtS9iGpYSzOq9aK7c881Cw" class="btn btn-link">How to create translating order</button>
-<button type="button" href="https://scribehow.com/shared/How_to_Submit_a_Drafting_order_on_Translingu__vV8k9U7rTAGMmVG-OdC3Mw" class="btn btn-link">How to create drafting order</button>
-<button type="button" href="https://scribehow.com/shared/How_to_Submit_a_Notary_order_on_Translingu__LaBQy3suTKWB9-ENfglXuA" class="btn btn-link">How to create notary order</button>
+
+<a href="#" onClick="MyWindow=window.open('https://scribehow.com/shared/How_to_Submit_a_Translation_Order_and_Make_a_Payment__rtS9iGpYSzOq9aK7c881Cw','MyWindow','width=600,height=300'); return false;"><button>How to create translating order</button>     </a>
+
+<a href="#" onClick="MyWindow=window.open('https://scribehow.com/shared/How_to_Submit_a_Drafting_order_on_Translingu__vV8k9U7rTAGMmVG-OdC3Mw','MyWindow','width=600,height=300'); return false;"><button>How to create drafting order</button></a>
+
+<a href="#" onClick="MyWindow=window.open('https://scribehow.com/shared/How_to_Submit_a_Notary_order_on_Translingu__LaBQy3suTKWB9-ENfglXuA','MyWindow','width=600,height=300'); return false;"><button>How to create notary order</button></a>
+
+
+
+
 <hr>
 <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>

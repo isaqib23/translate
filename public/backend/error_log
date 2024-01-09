@@ -1,0 +1,606 @@
+[03-Dec-2023 20:52:13 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/fozqalma/translate.galleypilot.com/app/Services/StripeService.php on line 11
+[28-Dec-2023 10:59:32 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 10:59:32 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:02 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:02 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:09 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:09 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:12 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:12 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:34 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:34 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:38 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:38 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:41 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:41 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:46 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:46 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:49 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:00:49 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:03 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:03 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:12 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:12 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:16 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:16 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:18 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:18 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:23 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:23 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:27 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:27 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:28 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:01:28 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:47:49 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:47:49 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:49:41 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:49:41 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:49:45 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:49:45 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:49:48 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:49:48 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:50:07 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:50:07 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:56:55 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:56:55 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:58:03 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:58:03 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:58:05 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 11:58:05 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 12:41:06 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 12:41:06 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 12:41:09 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 12:41:09 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 12:41:11 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 12:41:11 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 13:00:55 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[28-Dec-2023 13:00:55 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:19:21 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:19:21 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:19:30 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:19:30 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:19:36 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:19:36 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:19:45 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:19:45 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:22:51 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:22:51 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:23:03 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 00:23:03 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:48:17 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:48:17 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:48:22 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:48:22 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:48:28 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:48:28 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:48:31 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:48:31 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:49:04 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:49:04 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:49:10 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:49:10 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:53:42 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:53:42 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:53:42 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:53:42 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:53:43 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:53:43 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:53:54 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:53:54 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:54:00 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:54:00 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:58:20 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:58:20 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:58:57 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:58:57 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:59:51 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:59:51 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:59:53 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[29-Dec-2023 14:59:53 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 01:55:58 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 01:55:58 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 01:56:01 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 01:56:01 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 01:57:12 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 01:57:12 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 01:57:16 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 01:57:16 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:00:32 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:00:32 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:00:35 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:00:35 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:00:40 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:00:40 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:17:30 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:17:30 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:17:34 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[03-Jan-2024 08:17:34 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:29:57 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:29:57 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:30:00 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:30:00 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:30:06 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:30:06 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:30:10 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:30:10 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:10 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:10 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:13 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:13 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:15 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:15 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:17 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:17 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:22 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:22 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:25 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:25 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:25 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:25 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:32 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:32 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:41 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:41 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:44 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:44 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:49 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:32:49 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:46:54 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[07-Jan-2024 10:46:54 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:22:49 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:22:49 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:23:03 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:23:03 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:23:08 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:23:08 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:23:12 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:23:12 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:29:40 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:29:40 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:42:20 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:42:20 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:42:24 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:42:24 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:48:15 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:48:15 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:48:21 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:48:21 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:48:35 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:48:35 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:49:58 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:49:58 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:50:00 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:50:00 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:50:50 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 06:50:50 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:25:52 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:25:52 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:25:55 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:25:55 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:25:59 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:25:59 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:26:02 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:26:02 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:30:12 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:30:12 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:30:16 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:30:16 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:59:14 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:59:14 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:59:18 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 12:59:18 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:01:08 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:01:08 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:01:15 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:01:15 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:01:20 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:01:20 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:01:26 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:01:26 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:12:50 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:12:50 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:15:56 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:15:56 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:16:47 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:16:47 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:16:55 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:16:55 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:17:11 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:17:11 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:17:43 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[08-Jan-2024 13:17:43 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 00:01:41 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 00:01:41 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:38:50 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:38:50 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:38:53 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:38:53 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:38:57 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:38:57 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:39:12 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:39:12 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:39:15 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 01:39:15 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:17:57 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:17:57 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:54:51 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:54:51 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:54:54 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:54:54 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:54:57 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:54:57 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:01 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:01 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:27 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:27 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:32 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:32 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:34 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:34 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:36 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:55:36 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:56:47 America/Chicago] PHP Warning:  require(/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/rawanafl/translingu.com/public/backend/index.php on line 24
+[09-Jan-2024 04:56:47 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rawanafl/translingu.com/public/backend/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/rawanafl/translingu.com/public/backend/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/rawanafl/translingu.com/public/backend/index.php on line 24
