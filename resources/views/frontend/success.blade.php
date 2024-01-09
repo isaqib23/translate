@@ -86,6 +86,15 @@
                         </div>
                     </label>
                 </div>
+                <div class='col text-center'>
+                    <input type="radio" name="imgbackground" id="img3" class="d-none imgbgchk" value="paypal">
+                    <label for="img3">
+                        <img src="{{ asset('frontend/img/paypal.png') }}" alt="Image 3">
+                        <div class="tick_container">
+                          <div class="tick"><i class="fa fa-check"></i></div>
+                        </div>
+                    </label>
+                </div>
             </div>
             <button id="clickToPay" class="btn btn-success btn-block btn-lg">Continue to Payment</button>
             <br>

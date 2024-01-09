@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PayPalController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +39,10 @@ Route::post('/upload', 'FileUploadController@upload')->name('upload');
 Route::post('/upload_files', 'FileUploadController@upload_files')->name('upload_files');
 Route::post('/send_notification', 'FileUploadController@sendNotification')->name('sendNotification');
 
+Route::get('create-transaction', 'FrontendController@createTransaction')->name('createTransaction');
+Route::get('process-transaction', 'FrontendController@processTransaction')->name('processTransaction');
+Route::get('success-transaction', 'FrontendController@successTransaction')->name('successTransaction');
+Route::get('cancel-transaction', 'FrontendController@cancelTransaction')->name('cancelTransaction');
 //Route::get('/', [FrontendController::class, 'index']);
 //Route::get('/success/{id}', [FrontendController::class, 'success']);
 //Route::get('/verify_status/{id}', [FrontendController::class, 'verify_status']);

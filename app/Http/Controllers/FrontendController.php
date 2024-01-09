@@ -10,6 +10,7 @@ use App\Services\StripeService;
 use App\Services\TabbyService;
 use Stripe\Stripe;
 use Stripe\Checkout\Session as StripeSession;
+use Srmklive\PayPal\Services\PayPal as PayPalClient;
 
 class FrontendController extends Controller
 {
@@ -68,6 +69,8 @@ class FrontendController extends Controller
             return $session->url;
         }elseif($payment_method == "foloosi"){
             return $this->foloosi_payment($amount, $user_uuid);
+        }elseif($payment_method == "paypal"){
+            return $this->processTransaction($amount);
         }elseif($payment_method == "tabby"){
             $tabby = new TabbyService();
 
@@ -191,6 +194,74 @@ class FrontendController extends Controller
 
             return ["status" => true, "message" => $reference_token, "is_foloosi" => true, "merchant_key" => config('app.foloosi_merchant_key')];
         }
+    }
+
+
+    public function processTransaction($amount)
+    {
+        $provider = new PayPalClient;
+        $provider->setApiCredentials(config('paypal'));
+        $paypalToken = $provider->getAccessToken();
+
+        $response = $provider->createOrder([
+            "intent" => "CAPTURE",
+            "application_context" => [
+                "return_url" => route('successTransaction'),
+                "cancel_url" => route('cancelTransaction'),
+            ],
+            "purchase_units" => [
+                0 => [
+                    "amount" => [
+                        "currency_code" => "USD",
+                        "value" => $amount
+                    ]
+                ]
+            ]
+        ]);
+
+        if (isset($response['id']) && $response['id'] != null) {
+            $approveHref = '';
+            foreach ($response['links'] as $link) {
+                if ($link['rel'] === 'approve') {
+                    $approveHref = $link['href'];
+                    break;
+                }
+            }
+
+            return $approveHref;
+        }
+    }
+    /**
+     * success transaction.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function successTransaction(Request $request)
+    {
+        $provider = new PayPalClient;
+        $provider->setApiCredentials(config('paypal'));
+        $provider->getAccessToken();
+        $response = $provider->capturePaymentOrder($request['token']);
+        if (isset($response['status']) && $response['status'] == 'COMPLETED') {
+            return redirect()
+                ->route('createTransaction')
+                ->with('success', 'Transaction complete.');
+        } else {
+            return redirect()
+                ->route('createTransaction')
+                ->with('error', $response['message'] ?? 'Something went wrong.');
+        }
+    }
+    /**
+     * cancel transaction.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function cancelTransaction(Request $request)
+    {
+        return redirect()
+            ->route('createTransaction')
+            ->with('error', $response['message'] ?? 'You have canceled the transaction.');
     }
 
 }
