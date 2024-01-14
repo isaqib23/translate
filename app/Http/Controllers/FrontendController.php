@@ -70,7 +70,7 @@ class FrontendController extends Controller
         }elseif($payment_method == "foloosi"){
             return $this->foloosi_payment($amount, $user_uuid);
         }elseif($payment_method == "paypal"){
-            return $this->processTransaction($amount);
+            return $this->processTransaction($amount, $user_uuid);
         }elseif($payment_method == "tabby"){
             $tabby = new TabbyService();
 
@@ -197,7 +197,7 @@ class FrontendController extends Controller
     }
 
 
-    public function processTransaction($amount)
+    public function processTransaction($amount, $user_uuid)
     {
         $provider = new PayPalClient;
         $provider->setApiCredentials(config('paypal'));
@@ -211,6 +211,7 @@ class FrontendController extends Controller
             ],
             "purchase_units" => [
                 0 => [
+                    "reference_id" => $user_uuid,
                     "amount" => [
                         "currency_code" => "USD",
                         "value" => $amount
@@ -243,13 +244,15 @@ class FrontendController extends Controller
         $provider->getAccessToken();
         $response = $provider->capturePaymentOrder($request['token']);
         if (isset($response['status']) && $response['status'] == 'COMPLETED') {
-            return redirect()
-                ->route('createTransaction')
-                ->with('success', 'Transaction complete.');
+        $reference_id = $response['purchase_units'][0]['reference_id'];
+        $userPayment = new UserPayment;
+                $userPayment::whereNotNull('amount')
+                 ->where('amount', '<>', '')
+                 ->where('user_uuid', $reference_id)
+                 ->update(['status' => "paid"]);
+        return redirect()->to(url('/payment_status/success'));
         } else {
-            return redirect()
-                ->route('createTransaction')
-                ->with('error', $response['message'] ?? 'Something went wrong.');
+            return redirect()->to(url('/payment_status/cancel'));
         }
     }
     /**
@@ -259,9 +262,7 @@ class FrontendController extends Controller
      */
     public function cancelTransaction(Request $request)
     {
-        return redirect()
-            ->route('createTransaction')
-            ->with('error', $response['message'] ?? 'You have canceled the transaction.');
+        return redirect()->to(url('/payment_status/cancel'));
     }
 
 }
