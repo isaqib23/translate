@@ -352,7 +352,7 @@ $('input[type="radio"][name="category_type"]').change(function() {
             $("#countries").hide();
             $("#translate_type").hide();
             $("#notary").removeClass("d-none");
-            $("#id_check").removeClass("d-none");
+            $("#id_check").addClass("d-none");
             $("#note").removeClass("d-none");
         }else{
             $("#countries").show();

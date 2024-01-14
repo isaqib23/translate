@@ -96,9 +96,9 @@ class FileUploadController extends Controller
         } elseif ($request->input('category_type') == 3) {
             if (!$request->has('notary')) {
                 return ["message" => "Notary Options is required"];
-            } elseif (!$request->has('id_check') || $request->input('id_check') == "") {
+            } /*elseif (!$request->has('id_check') || $request->input('id_check') == "") {
                 return ["message" => "ID or Passport check is required"];
-            }
+            }*/
         }
 
         if (!$request->has('email') || $request->input('email') == "") {
