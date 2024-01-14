@@ -341,7 +341,7 @@ $('input[type="radio"][name="category_type"]').change(function() {
         var selectedValue = $(this).val();
         if(selectedValue == 2){
             $("#drafting").removeClass("d-none");
-            $("#id_check").removeClass("d-none");
+            $("#id_check").addClass("d-none");
             $("#notary").addClass("d-none");
             $("#note").addClass("d-none");
             $("#countries").hide();
@@ -352,7 +352,7 @@ $('input[type="radio"][name="category_type"]').change(function() {
             $("#countries").hide();
             $("#translate_type").hide();
             $("#notary").removeClass("d-none");
-            $("#id_check").addClass("d-none");
+            $("#id_check").removeClass("d-none");
             $("#note").removeClass("d-none");
         }else{
             $("#countries").show();
