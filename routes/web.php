@@ -60,6 +60,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/requests', 'Backend\OrderController@index')->name('admin.requests');
     Route::post('/set_amount', 'Backend\OrderController@setAmount')->name('admin.setAmount');
     Route::get('/view_files/{id}', 'Backend\OrderController@view_files')->name('admin.requests.view_files');
+    Route::get('/view_voucher/{id}', 'Backend\OrderController@view_voucher')->name('admin.requests.view_voucher');
     Route::match(['get', 'post', 'delete'], '/delete_order/{id}', 'Backend\OrderController@destroy')->name('admin.requests.destroy');
 
     // Login Routes

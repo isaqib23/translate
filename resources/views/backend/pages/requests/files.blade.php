@@ -89,7 +89,11 @@ Orders Files - Admin Panel
             @csrf
             <div class="mb-4">
                 <label for="amount" class="block text-sm font-medium text-gray-700">Amount</label>
-                <input type="text" id="amount" name="amount" class="mt-1 p-2 w-full border rounded-md" required>
+                <input type="text" id="amount" name="amount" class="mt-1 p-2 w-full border rounded-md" required style="left: 50px; position: relative;" value="{{$payment->amount}}">
+            </div>
+            <div class="mb-4">
+                <label for="amount" class="block text-sm font-medium text-gray-700" style="top: -22px !important; position: relative;">Delivery Time</label>
+                <textarea type="text" id="delivery" name="delivery" class="mt-1 p-2 w-full border rounded-md" required style="left: 15px; position: relative;">{{$payment->delivery_time}}</textarea>
             </div>
             <button  type="submit" class="btn btn-primary px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                 Submit Payment
@@ -130,6 +134,7 @@ Orders Files - Admin Panel
             },
             body: JSON.stringify({
                 amount: document.getElementById('amount').value,
+                delivery: document.getElementById('delivery').value,
                 uuid: "<?=request()->segment(3)?>"
             })
         })

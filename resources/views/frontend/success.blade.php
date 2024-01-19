@@ -52,8 +52,8 @@
 <div class="row featurette">
 <div style="margin: 0 auto; text-align: center">
     <div class="alert alert-success" role="alert">
-      <h4 class="alert-heading">Request Submitted!</h4>
-      <p>we are processing your request and we will be back with time and cost within 2 minutes</p>
+      <h4 class="alert-heading" id="delivery_status">Request Submitted!</h4>
+      <p id="delivery">we are processing your request and we will be back with time and cost within 2 minutes</p>
     </div>
 </div>
 </div>
@@ -103,7 +103,7 @@
     </div>
     <div class="col-md-8" style="text-align: center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/l0km1k1Waa4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
+
 
     </div>
 </div>
@@ -143,6 +143,8 @@ window.onload = function () {
             success: function(response) {
                 $("#timer").addClass("d-none");
                 $(".amount").text(response.amount);
+                $("#delivery_status").text("Request Updated");
+                $("#delivery").text(response.delivery);
                 $("#payment").removeClass("d-none");
             },
             error: function(xhr, status, error) {

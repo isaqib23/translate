@@ -36,7 +36,8 @@ class OrderController extends Controller
         }
         $files = FileUpload::where("user_uuid",$request->segment(3))->paginate(10);
         $user = UserRequests::where('user_uuid', $request->segment(3))->first();
-        return view('backend.pages.requests.files', ['files' => $files, 'user' => $user]);
+        $payment = UserPayment::where("user_uuid",$request->segment(3))->first();
+        return view('backend.pages.requests.files', ['files' => $files, 'user' => $user, 'payment' => $payment]);
     }
 
     public function setAmount(Request $request){
@@ -45,10 +46,12 @@ class OrderController extends Controller
         }
         $request->validate([
             'amount' => 'required',
-            'uuid' => 'required'
+            'uuid' => 'required',
+            'delivery' => 'required'
         ]);
 
-        UserPayment::where("user_uuid",$request->input("uuid"))->update(["status" => "updated", "amount" => $request->input("amount")]);
+        UserPayment::where("user_uuid",$request->input("uuid"))->update(["status" => "updated", "amount" => $request->input("amount"), "delivery_time" => $request->input("delivery")]);
+        UserRequests::where("user_uuid",$request->input("uuid"))->update(["employee" => Auth::guard('admin')->user()->name]);
         return response()->json(["message" => "Amount is updated"], 200);
     }
 
@@ -63,5 +66,13 @@ class OrderController extends Controller
 
         session()->flash('success', 'Order has been deleted !!');
         return back();
+    }
+
+    public function view_voucher(Request $request)
+    {
+        $files = FileUpload::where("user_uuid",$request->segment(3))->paginate(10);
+        $user = UserRequests::where('user_uuid', $request->segment(3))->first();
+        $payment = UserPayment::where("user_uuid",$request->segment(3))->first();
+        return view('backend.pages.requests.voucher', ['files' => $files, 'user' => $user, 'payment' => $payment]);
     }
 }

@@ -38,6 +38,7 @@ class FrontendController extends Controller
             return response()->json([
             'success' => true,
             'amount' => $firstRecord->amount,
+            'delivery' => $firstRecord->delivery_time,
              ], 200);
         }elseif ($firstRecord && ($firstRecord->status == "paid")) {
             return response()->json(['error' => 'No files uploaded'], 403);

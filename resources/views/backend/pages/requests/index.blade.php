@@ -55,6 +55,7 @@ Orders Page - Admin Panel
                                     <th width="10%">Urgent</th>
                                     <th width="10%">Created At</th>
                                     <th width="10%">Status</th>
+                                    <th width="10%">Employee</th>
                                     <th width="15%">Action</th>
                                 </tr>
                             </thead>
@@ -84,14 +85,19 @@ Orders Page - Admin Panel
                                     ?>
                                     </td>
                                     <td>{{ convertTime($user->created_at) }}</td>
+
                                     <td>
                                         <span class="badge badge-info mr-1">
                                             {{ ucfirst($user->payment->status) }}
                                         </span>
                                     </td>
+                                    <td>{{ $user->employee }}</td>
                                     <td>
                                     @if (Auth::guard('admin')->user()->can('order.edit'))
                                         <a class="btn btn-success text-white" href="{{ route('admin.requests.view_files', $user->user_uuid) }}">View Files</a>
+                                        @if($user->payment->status == 'paid')
+                                        <a class="btn btn-success text-white" href="{{ route('admin.requests.view_voucher', $user->user_uuid) }}">View Voucher</a>
+                                        @endif
                                     @endif
                                         @if (Auth::guard('admin')->user()->can('order.delete'))
                                             <a class="btn btn-danger text-white" href="{{ route('admin.requests.destroy', $user->id) }}"
