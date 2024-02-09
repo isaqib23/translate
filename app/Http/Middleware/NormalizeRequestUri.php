@@ -18,7 +18,7 @@ class NormalizeRequestUri
     {
         $uri = $request->getRequestUri();
             if (strtolower($uri) !== $uri) {
-                return redirect(strtolower($uri), 404);
+                return redirect(strtolower($uri), 301);
             }
 
             return $next($request);
