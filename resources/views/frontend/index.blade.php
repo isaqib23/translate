@@ -152,15 +152,15 @@
   <div class="row" style="margin-bottom: 35px">
     <div class="col-md-4 text-center">
         <input type="radio" class="btn-check" name="category_type" id="success-outlined1" value="1" autocomplete="off" checked>
-        <label class="btn btn-outline-success" for="success-outlined1">Translating</label>
+        <label class="btn btn-outline-primary" for="success-outlined1">Translating</label>
     </div>
     <div class="col-md-4 text-center">
         <input type="radio" class="btn-check" name="category_type" id="success-outlined2" value="2" autocomplete="off">
-        <label class="btn btn-outline-success" for="success-outlined2">Drafting</label>
+        <label class="btn btn-outline-primary" for="success-outlined2">Drafting</label>
     </div>
     <div class="col-md-4 text-center">
         <input type="radio" class="btn-check" name="category_type" id="success-outlined3" value="3" autocomplete="off">
-        <label class="btn btn-outline-success" for="success-outlined3">Notary</label>
+        <label class="btn btn-outline-primary" for="success-outlined3">Notary</label>
     </div>
   </div>
 
@@ -239,10 +239,10 @@
          @foreach (getCountries() as $key => $country)
             @if($key == 1)
                 <input type="radio" class="btn-check" name="from" value="{{$key}}" id="fromRadio{{$key}}" autocomplete="off" checked>
-                <label class="btn btn-outline-success" for="fromRadio{{$key}}"><?=$country?></label>
+                <label class="btn btn-outline-primary" for="fromRadio{{$key}}"><?=$country?></label>
             @else
                 <input type="radio" class="btn-check" name="from" value="{{$key}}" id="fromRadio{{$key}}" autocomplete="off">
-                <label class="btn btn-outline-success" for="fromRadio{{$key}}"><?=$country?></label>
+                <label class="btn btn-outline-primary" for="fromRadio{{$key}}"><?=$country?></label>
             @endif
          @endforeach
         </div>
@@ -261,10 +261,10 @@
          @foreach ($reversedLanguages as $key => $country)
              @if($key == 10)
                  <input type="radio" class="btn-check" name="to" value="{{$key}}" id="toRadio{{$key}}" autocomplete="off" checked>
-                 <label class="btn btn-outline-success" for="toRadio{{$key}}"><?=$country?></label>
+                 <label class="btn btn-outline-primary" for="toRadio{{$key}}"><?=$country?></label>
              @else
                  <input type="radio" class="btn-check" name="to" value="{{$key}}" id="toRadio{{$key}}" autocomplete="off">
-                 <label class="btn btn-outline-success" for="toRadio{{$key}}"><?=$country?></label>
+                 <label class="btn btn-outline-primary" for="toRadio{{$key}}"><?=$country?></label>
              @endif
           @endforeach
         </div>

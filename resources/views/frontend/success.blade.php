@@ -53,7 +53,7 @@
 <div style="margin: 0 auto; text-align: center">
     <div class="alert alert-success" role="alert">
       <h4 class="alert-heading" id="delivery_status">Request Submitted!</h4>
-      <p id="delivery">we are processing your request and we will be back with time and cost within 2 minutes</p>
+      <p>we are processing your request and we will be back with time and cost within 2 minutes</p>
     </div>
 </div>
 </div>
@@ -66,6 +66,7 @@
         <div id="payment" class="d-none">
             <div class="alert alert-success mt-3" role="alert">
                 You have to pay AED: <span class="amount"></span>
+                <br><p id="delivery"></p>
             </div>
             <div class="col-md-12 row">
                 <div class='col text-center'>
